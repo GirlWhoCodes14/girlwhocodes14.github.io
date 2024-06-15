@@ -7,11 +7,168 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Alexis Ayuso</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="https://kit.fontawesome.com/5e4a65d337.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  Hello world
-  <script src="script.js"></script>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="images/alexis_logo.png" class="logo" alt=""> 
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-text">
+        <p>Software Engineer</p>
+        <h1>Hi, I'm <span>Alexis</span> Ayuso.</h1>
+      </div>
+    </div>
+  </div>
+
+  <!----------------- About -------------->
+
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <!-- Profile Image -->
+        <div class="about-col-1">
+          <img src="images/alexis_pregrad.jpg" alt="Alexis Ayuso">
+        </div>
+
+        <!-- About Me -->
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>I have a remarkable history of high academic performance from primary school to university. 
+            Living and learning in Taiwan for 4 years with respect for the culture and people.<br><br>
+            I am energetic, detail-oriented, and committed to learning and further developing expertise. 
+            I aim to leverage and expand my skills to contribute positively to your establishment.
+          </p>
+
+          <!-- Tab Titles -->
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="open_tab('skills')">Skills</p>
+            <p class="tab-links" onclick="open_tab('experience')">Experience</p>
+            <p class="tab-links" onclick="open_tab('education')">Education</p>
+          </div>
+
+          <!-- Tab Contents -->
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>App Development</span><br>Building Android/iOS APPs</li>
+
+              <li><span>APP Development</span><br>
+                SwiftUI<br>
+                Kotlin
+              </li>
+
+              <li><span>Programming Languages</span><br>
+                C/C++<br>
+                SwiftUI<br>
+                Kotlin<br>
+                Python
+              </li>
+
+              <li><span>Web Development</span><br>
+                HTML<br>
+                CSS<br>
+              </li>
+
+              <li><span>Familiarity with</span><br>
+                Java<br>
+                Flutter
+              </li>
+
+              <li><span>3D Designing/Game Development</span><br>
+                SketchUp<br>
+                Unity3D
+              </li>
+
+              <li><span>Git</span><br>GitHub</li>
+              <li><span>NoSQL</span><br>MongoDB</li>
+
+              <li><span>Microsoft Office</span><br>
+                Word<br>
+                PowerPoint<br>
+                Excel
+              </li>
+
+              <li><span>Video Editing</span><br>Clipchamp</li>
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>July-September 2022</span><br>English Teacher at Joy English School</li>
+              <li><span>July-August 2022</span><br>English Teacher at English Summer Camp</li>
+              <li><span>July-August 2016</span><br>English Teacher at Y.M.C.A. Belize</li>
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>2020-2024</span><br>National Dong Hwa University</li>
+              <li><span>2018-2020</span><br>Saint John's College Junior College</li>
+              <li><span>2014-2018</span><br>Saint Catherine Academy</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Services -->
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-brands fa-app-store"></i>
+          <h2>APP Development</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo adipisci perferendis illo nobis, inventore tempora. Assumenda delectus repellendus mollitia molestias! Nostrum sequi eligendi dolor itaque iusto, alias laudantium! Veritatis, corporis?</p>
+          <a href="#">Learn More</a>
+        </div>
+
+        <div>
+          <i class="fa-solid fa-crop"></i>
+          <h2>3D Design</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo adipisci perferendis illo nobis, inventore tempora. Assumenda delectus repellendus mollitia molestias! Nostrum sequi eligendi dolor itaque iusto, alias laudantium! Veritatis, corporis?</p>
+          <a href="#">Learn More</a>
+        </div>
+
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Web Development</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo adipisci perferendis illo nobis, inventore tempora. Assumenda delectus repellendus mollitia molestias! Nostrum sequi eligendi dolor itaque iusto, alias laudantium! Veritatis, corporis?</p>
+          <a href="#">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script> <!-- src="script.js"-->
+    var tabLinks = document.getElementsByClassName("tab-links");
+    var tabContents = document.getElementsByClassName("tab-contents");
+
+    function open_tab(tabName){
+      for (tabLink of tabLinks){
+        tabLink.classList.remove("active-link");
+      }
+
+      for (tabContent of tabContents){
+        tabContent.classList.remove("active-tab");
+      }
+
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabName).classList.add("active-tab");
+    }
+  </script>
 </body>
 
 </html>
