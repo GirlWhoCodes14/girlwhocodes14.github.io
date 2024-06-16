@@ -92,6 +92,33 @@ nav ul li a:hover::after {
   color: #FEAE6F;
 }
 
+.header-text ul {
+  margin: 20px 0;
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-text ul li {
+  list-style: none;
+}
+
+.header-text ul li a {
+  color: #C0F0F7;
+  text-decoration: none;
+  font-size: 30px;
+  position: relative;
+  transition: color 0.5s;
+  -webkit-transition: color 0.5s;
+  -moz-transition: color 0.5s;
+  -ms-transition: color 0.5s;
+  -o-transition: color 0.5s;
+}
+
+.header-text ul li a:hover{
+  color: #F6DCAC;
+}
+
 /* ---------------------------------------------- About ------------------------------------------- */
 
 #about {
@@ -192,21 +219,50 @@ nav ul li a:hover::after {
 }
 
 /*------------- try Skills -------------------*/
-.trySkills {
+.all-skills {
   display: flex; /*image and links will be side-by-side*/
   align-items: center;
   justify-content: flex-start;
   flex-wrap: wrap;
 }
 
+.skill-group {
+  display: block;
+  margin: 6px;
+  padding: 10px 10px 0px 10px;
+  justify-content: center;
+  border: 1px solid #102C57;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.skill-group h4 {
+  text-wrap: pretty;
+  color: #FEAE6F;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .skill {
-  display: inline-block;
-  margin: 10px 5px;
-  width: 110px;
+  margin: 10px;
+  margin-bottom: 5px;
+  min-width: 80;
   text-align: center;
+
 }
 
 .skill img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5px;
   height: 45px;
   width: fit-content;
 }
