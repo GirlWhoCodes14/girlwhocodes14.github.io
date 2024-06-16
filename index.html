@@ -5,12 +5,13 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Alexis Ayuso</title>
-  <meta name="description" content="Learn about Alexis Ayuso">
+  <title>Alexis Ayuso | Software Developer</title>
+  <meta name="description" content="Handcrafted portfolio website of Alexis Ayuso">
   <meta name="keywords" content="Alexis Ayuso, Belize">
 
   <!-- TYPE BELOW IS PROBABLY: 'website' or 'article' or look on https://ogp.me/#types -->
   <meta property="type" content="website"/>
+  <meta property="og:url" content="https://alexisayuso.com"/>
 
   <link href="style.css" rel="stylesheet" type="text/css" />
   <script src="https://kit.fontawesome.com/5e4a65d337.js" crossorigin="anonymous"></script>
@@ -23,13 +24,15 @@
     <div class="container">
       <nav>
         <img src="images/alexis_logo2.png" class="logo" alt=""> 
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Contact</a></li>
+        <ul id="side-menu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-solid fa-xmark" onclick="close_menu()"></i>
         </ul>
+        <i class="fa-solid fa-bars" onclick="open_menu()"></i>
       </nav>
 
       <div class="header-text">
@@ -195,6 +198,15 @@
           </div>
 
           <div class="tab-contents" id="education">
+            <div class="school-group">
+              <div class="school-logo"><img src="images/education/ndhu_logo.png" alt="NDHU logo"></div>
+              <div class="school">
+                <h4>2020 - 2024</h4>
+                <p class="degree"><span>Bachelor Degree in</span><br>Computer Science and Information Engineering</p>
+                <p class="school-title">National Dong Hwa University</p>
+                <span>Program of Multimedia and Intelligent Computing</span>
+              </div>
+            </div>
             <ul>
               <li><span>2020-2024</span><br>National Dong Hwa University</li>
               <li><span>2018-2020</span><br>Saint John's College Junior College</li>
@@ -282,6 +294,39 @@
   </div>
 
   <!------------------------------------------------------- Contact -------------------------------------------->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><i class="fa-solid fa-envelope"></i></i>contact@example.com</p>
+          <p><i class="fa-solid fa-paper-plane"></i>0984248265</p>
+          <div class="social-icons">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+          <a href="documents/AlexisAyuso-CV.pdf" download class="btn btn2">Download CV</a>
+        </div>
+
+        <div class="contact-right">
+          <form name="submit-to-google-sheet" action="">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="Email" id="" placeholder="Your Email" required>
+            <textarea name="Message" id="" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+
+          <span id="msg"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <p>Copyright © Alexis. Made by Alexis Ayuso.</p>
+    </div>
+  </div>
 
   <script> <!-- src=script.js -->
     var tabLinks = document.getElementsByClassName("tab-links");
@@ -299,6 +344,38 @@
       event.currentTarget.classList.add("active-link");
       document.getElementById(tabName).classList.add("active-tab");
     }
+  </script>
+
+  <script>
+    var sideMenu = document.getElementById("side-menu");
+
+    function open_menu() {
+      sideMenu.style.right = "0";
+    }
+
+    function close_menu() {
+      sideMenu.style.right = "-200px";
+    }
+  </script>
+
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbx9KfUlhPW8Mh2pj1WpTP_nbw1JKU3tByfpnsg9IchYlMH2Z2vskZ8h1YCcH-rC1wh5/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+          msg.innerHTML = "Your message was sent!"
+          setTimeout(function(){
+            msg.innerHTML = ""
+          }, 5000)
+
+          form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
   </script>
 </body>
 
