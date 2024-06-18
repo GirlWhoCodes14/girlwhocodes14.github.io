@@ -2,381 +2,48 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Alexis Ayuso | Software Developer</title>
   <meta name="description" content="Handcrafted portfolio website of Alexis Ayuso">
   <meta name="keywords" content="Alexis Ayuso, Belize">
 
-  <!-- TYPE BELOW IS PROBABLY: 'website' or 'article' or look on https://ogp.me/#types -->
   <meta property="type" content="website"/>
   <meta property="og:url" content="https://alexisayuso.com"/>
 
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="css/common/style.css" rel="stylesheet" type="text/css" />
+  <link href="css/home.css" rel="stylesheet" type="text/css" />
+
   <script src="https://kit.fontawesome.com/5e4a65d337.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
 <body>
 
   <!--------------------------------------- Header w/ navbar and intro------------------------------------------->
-  <div id="header">
-    <div class="container">
-      <nav>
-        <img src="images/alexis_logo2.png" class="logo" alt=""> 
-        <ul id="side-menu">
-          <li><a href="#header">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <i class="fa-solid fa-xmark" onclick="close_menu()"></i>
-        </ul>
-        <i class="fa-solid fa-bars" onclick="open_menu()"></i>
-      </nav>
+  <!-- Header.html -->
+  <div id="header-container"></div>
 
-      <div class="header-text">
-        <p>Software Engineer</p>
-        <h1>Hi, I'm <span>Alexis</span> Ayuso.</h1>
-        <ul>
-          <li><a href="https://www.linkedin.com/in/alexisayuso"><i class="fa-brands fa-linkedin"></i></a></li>
-          <li><a href="https://www.youtube.com/@iAmAlexisAyuso"><i class="fa-brands fa-youtube"></i></a></li>
-          <li><a href="https://github.com/GirlWhoCodes14"><i class="fa-brands fa-github"></i></a></li>
-        </ul>
+  <main id="home-container">
+    <div class="banner">
+      <img src="images/alexis_background.png" alt="Alexis Ayuso's banner">
+    </div>
+
+    <div class="latest-accomplishments">
+      <div class="section-header">
+        <h3>some of my latest work</h3>
       </div>
     </div>
-  </div>
+  </main>
 
-  <!---------------------------------------------- About --------------------------------------------------------->
+  <!-- Footer -->
+  <div id="footer-container"></div>
 
-  <div id="about">
-    <div class="container">
-      <div class="row">
-        <!-- Profile Image -->
-        <div class="about-col-1">
-          <img src="images/alexis_pregrad.jpg" alt="Alexis Ayuso">
-        </div>
-
-        <!-- About Me -->
-        <div class="about-col-2">
-          <h1 class="sub-title">About Me</h1>
-          <p>I have a remarkable history of high academic performance from primary school to university. 
-            I am energetic, detail-oriented, and committed to learning and further developing expertise. 
-            I aim to leverage and expand my skills to contribute positively to your establishment.
-          </p>
-
-          <!-- Tab Titles -->
-          <div class="tab-titles">
-            <p class="tab-links active-link" onclick="open_tab('skills')">Skills</p>
-            <p class="tab-links" onclick="open_tab('education')">Education</p>
-            <p class="tab-links" onclick="open_tab('experience')">Experience</p>
-          </div>
-
-          <!-- Tab Contents -->
-          <div class="tab-contents active-tab" id="skills">
-            <div class="all-skills">
-              <div class="skill-group">
-                <h4>Programming</h4>
-                <div class="skills">
-                  <div class="skill">
-                    <img src="images/skills/C++_logo.png" alt="C++ logo">
-                    <p>C/C++</p>
-                  </div>
-
-                  <div class="skill">
-                    <img src="images/skills/Python_logo.png" alt="Python logo">
-                    <p>Python</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="skill-group">
-                <h4>APP Development</h4>
-                <div class="skills">
-                  <div class="skill">
-                    <img src="images/skills/swiftui_logo.png" alt="SwiftUI logo">
-                    <p>SwiftUI</p>
-                  </div>
-
-                  <div class="skill">
-                    <img src="images/skills/Kotlin_logo.jpg" alt="Kotlin logo">
-                    <p>Kotlin</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="skill-group">
-                <h4>Web Development</h4>
-                <div class="skills">
-                  <div class="skill">
-                    <img src="images/skills/HTML_logo.png" alt="HTML logo">
-                    <p>HTML</p>
-                  </div>
-
-                  <div class="skill">
-                    <img src="images/skills/CSS3_logo.png" alt="CSS3 logo">
-                    <p>CSS</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="skill-group">
-                <h4>3D Design</h4>
-                <div class="skills">
-                  <div class="skill">
-                    <img src="images/skills/sketchup_logo.png" alt="SketchUp logo">
-                    <p>SketchUp</p>
-                  </div>
-
-                  <div class="skill">
-                    <img src="images/skills/Unity_logo.png" alt="Unity logo">
-                    <p>Unity</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="skill-group">
-                <h4>Version Control</h4>
-                <div class="skills">
-                  <div class="skill">
-                    <img src="images/skills/git_logo.png" alt="Git logo">
-                    <p>Git</p>
-                  </div>
-
-                  <div class="skill">
-                    <img src="images/skills/github_logo.jpg" alt="GitHub logo">
-                    <p>GitHub</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="skill-group">
-                <h4>Microsoft Office</h4>
-                <div class="skills">
-                  <div class="skill">
-                    <img src="images/skills/Microsoft_Office_Word_logo.png" alt="Microsoft Word logo">
-                    <p>Word</p>
-                  </div>
-                  <div class="skill">
-                    <img src="images/skills/Microsoft_Office_Powerpoint_logo.png" alt="Microsoft PowerPoint logo">
-                    <p>PowerPoint</p>
-                  </div>
-                  <div class="skill">
-                    <img src="images/skills/Microsoft_Office_Excel_logo.png" alt="Microsoft Excel logo">
-                    <p>Excel</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="skill-group">
-                <h4>NoSQL</h4>
-                <div class="skills">
-                  <div class="skill">
-                    <img src="images/skills/MongoDB_logo.png" alt="MongoDB logo">
-                    <p>MongoDB</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="skill-group">
-                <h4>Video Editing</h4>
-                <div class="skills">
-                  <div class="skill">
-                    <img src="images/skills/Microsoft_Clipchamp_logo.png" alt="Clipchamp logo">
-                    <p>Clipchamp</p>
-                  </div>
-                </div>
-              </div>
-
-              <ul>
-                <li><span>Familiarity with</span><br>
-                  Java<br>
-                  Flutter
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="tab-contents" id="education">
-            <div class="school-group">
-              <div class="school-logo"><img src="images/education/ndhu_logo.png" alt="NDHU logo"></div>
-              <div class="school">
-                <h4>2020 - 2024</h4>
-                <p class="degree"><span>Bachelor Degree in</span><br>Computer Science and Information Engineering</p>
-                <p class="school-title">National Dong Hwa University</p>
-                <span>Program of Multimedia and Intelligent Computing</span>
-              </div>
-            </div>
-            <ul>
-              <li><span>2020-2024</span><br>National Dong Hwa University</li>
-              <li><span>2018-2020</span><br>Saint John's College Junior College</li>
-              <li><span>2014-2018</span><br>Saint Catherine Academy</li>
-            </ul>
-          </div>
-
-          <div class="tab-contents" id="experience">
-            <ul>
-              <li><span>July-September 2022</span><br>English Teacher at Joy English School</li>
-              <li><span>July-August 2022</span><br>English Teacher at English Summer Camp</li>
-              <li><span>July-August 2016</span><br>English Teacher at Y.M.C.A. Belize</li>
-            </ul>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!---------------------------------------------- Services ------------------------------------------------->
-  <div id="services">
-    <div class="container">
-      <h1 class="sub-title">My Services</h1>
-      <div class="services-list">
-        <div>
-          <i class="fa-brands fa-app-store"></i>
-          <h2>APP Development</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo adipisci perferendis illo nobis, inventore tempora. Assumenda delectus repellendus mollitia molestias! Nostrum sequi eligendi dolor itaque iusto, alias laudantium! Veritatis, corporis?</p>
-          <a href="#">Learn More</a>
-        </div>
-
-        <div>
-          <i class="fa-solid fa-crop"></i>
-          <h2>3D Design</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo adipisci perferendis illo nobis, inventore tempora. Assumenda delectus repellendus mollitia molestias! Nostrum sequi eligendi dolor itaque iusto, alias laudantium! Veritatis, corporis?</p>
-          <a href="#">Learn More</a>
-        </div>
-
-        <div>
-          <i class="fa-solid fa-code"></i>
-          <h2>Web Development</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo adipisci perferendis illo nobis, inventore tempora. Assumenda delectus repellendus mollitia molestias! Nostrum sequi eligendi dolor itaque iusto, alias laudantium! Veritatis, corporis?</p>
-          <a href="#">Learn More</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!------------------------------------------------------ Portfolio -------------------------------------------------------->
-
-  <div id="portfolio">
-    <div class="container">
-      <h1 class="sub-title">My Projects</h1>
-      <div class="work-list">
-        <div class="work">
-          <img src="images/personal-portfolio-img/work-1.png" alt="Work 1">
-          <div class="layer">
-            <h3>Social Media App</h3>
-            <p>The app connects you to the talented people around the world. Download it from Play Store.</p>
-            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-          </div>
-        </div>
-
-        <div class="work">
-          <img src="images/personal-portfolio-img/work-2.png" alt="Work 2">
-          <div class="layer">
-            <h3>Social Media App</h3>
-            <p>The app connects you to the talented people around the world. Download it from Play Store.</p>
-            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-          </div>
-        </div>
-
-        <div class="work">
-          <img src="images/personal-portfolio-img/work-3.png" alt="Work 3">
-          <div class="layer">
-            <h3>Social Media App</h3>
-            <p>The app connects you to the talented people around the world. Download it from Play Store.</p>
-            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-          </div>
-        </div>
-      </div>
-      <a href="#" class="btn">See more</a>
-    </div>
-  </div>
-
-  <!------------------------------------------------------- Contact -------------------------------------------->
-  <div id="contact">
-    <div class="container">
-      <div class="row">
-        <div class="contact-left">
-          <h1 class="sub-title">Contact Me</h1>
-          <p><i class="fa-solid fa-envelope"></i></i>contact@example.com</p>
-          <p><i class="fa-solid fa-paper-plane"></i>0984248265</p>
-          <div class="social-icons">
-            <a href=""><i class="fa-brands fa-facebook"></i></a>
-            <a href=""><i class="fa-brands fa-twitter-square"></i></a>
-            <a href=""><i class="fa-brands fa-instagram"></i></a>
-            <a href=""><i class="fa-brands fa-linkedin"></i></a>
-          </div>
-          <a href="documents/AlexisAyuso-CV.pdf" download class="btn btn2">Download CV</a>
-        </div>
-
-        <div class="contact-right">
-          <form name="submit-to-google-sheet" action="">
-            <input type="text" name="Name" placeholder="Your Name" required>
-            <input type="email" name="Email" id="" placeholder="Your Email" required>
-            <textarea name="Message" id="" rows="6" placeholder="Your Message"></textarea>
-            <button type="submit" class="btn btn2">Submit</button>
-          </form>
-
-          <span id="msg"></span>
-        </div>
-      </div>
-    </div>
-
-    <div class="copyright">
-      <p>Copyright © Alexis. Made by Alexis Ayuso.</p>
-    </div>
-  </div>
-
-  <script> <!-- src=script.js -->
-    var tabLinks = document.getElementsByClassName("tab-links");
-    var tabContents = document.getElementsByClassName("tab-contents");
-
-    function open_tab(tabName){
-      for (tabLink of tabLinks){
-        tabLink.classList.remove("active-link");
-      }
-
-      for (tabContent of tabContents){
-        tabContent.classList.remove("active-tab");
-      }
-
-      event.currentTarget.classList.add("active-link");
-      document.getElementById(tabName).classList.add("active-tab");
-    }
-  </script>
-
-  <script>
-    var sideMenu = document.getElementById("side-menu");
-
-    function open_menu() {
-      sideMenu.style.right = "0";
-    }
-
-    function close_menu() {
-      sideMenu.style.right = "-200px";
-    }
-  </script>
-
-  <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbx9KfUlhPW8Mh2pj1WpTP_nbw1JKU3tByfpnsg9IchYlMH2Z2vskZ8h1YCcH-rC1wh5/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("msg")
-
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-          msg.innerHTML = "Your message was sent!"
-          setTimeout(function(){
-            msg.innerHTML = ""
-          }, 5000)
-
-          form.reset()
-        })
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
+  <!-- Javascript -->
+  <script src="javascript/common/script.js"></script>
+  <script src="javascript/contact-message.js"></script>
 </body>
 
 </html>

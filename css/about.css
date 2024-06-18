@@ -1,0 +1,171 @@
+.row {
+    padding: 5% 10%;
+    box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
+}
+
+.section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+/* ----------- INTRO ------------ */
+.about-intro {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 6% 12%;
+}
+
+.about-col-1 {
+    flex-basis: 40%;
+}
+
+.about-col-1 img {
+    height: 350px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.about-col-2 {
+    flex-basis: 55%;
+    padding-right: 30px;
+}
+
+.about-col-2 .caption {
+    margin-bottom: 12px;
+    font-weight: 450;
+    font-size: 22px;
+    color: #0E46A3;
+}
+
+.about-col-2 p {
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 0.2 em;
+    color: #0C1844;
+}
+
+
+
+/* ----------- SKILLS ------------ */
+.skill-group {
+    display: block;
+    margin: 10px;
+    padding: 10px 10px 0px 10px;
+    justify-content: center;
+    border: 1px solid #9AC8CD;
+
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.skill-group h4 {
+    text-wrap: pretty;
+    color: #0E46A3;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skill {
+    margin: 10px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.skill img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    height: 45px;
+    width: fit-content;
+}
+
+.skill p {
+    font-size: 18px;
+}
+
+
+
+/* ----------- EDUCATION ------------ */
+.school {
+    margin: 25px auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.school img {
+    margin-bottom: 25px;
+    width: 150px;
+
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.school h4{
+    color: #0C1844;
+    font-size: 18px;
+}
+
+.school h3 {
+    margin: 15px 0;
+    color: #0E46A3;
+    font-size: 24px;
+}
+
+.degree {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.degree-type {
+    margin-bottom: 5px;
+    font-size: 17px;
+}
+
+.program {
+    margin-top: 5px;
+    font-size: 17px;
+}
+
+.school span {
+    margin: 10px 0;
+}
+
+
+/* ------------ EXPERIENCE ------------- */
+#experience {
+    display: none;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .about-col-1, .about-col-2 {
+        flex-basis: 100%;
+    }
+
+    .about-col-1 {
+        margin-bottom: 30px;
+    }
+
+    .about-col-2 {
+        font-size: 14px;
+    }
+}

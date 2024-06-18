@@ -1,0 +1,103 @@
+.banner {
+    width: 100%;
+    padding: 0 10%;
+    border-bottom: #dddddd solid 1px;
+    /*box-shadow: 0 4px 6px -6px #0E46A3;*/
+}
+
+main img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.section-header h3 {
+    text-align: center;
+    display: block;
+    color: #757575;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.2rem;
+    font-family: "proxima nova semibold", "Helvetica Neue", Helvetica, Arial, Sans-serif;
+}
+
+.latest-accomplishments {
+    padding: 10vh;
+    box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
+}
+
+@media only screen and (max-width: 850px) {
+    .banner {
+        padding: 0;
+    }
+}
+
+
+
+/* not in use */
+.container {
+    padding: 10px 5%;
+}
+
+.header-text {
+    margin-top: 20%;
+    font-size: 30px;
+}
+
+.header-text p {
+    color: #C0F0F7;
+}
+
+.header-text h1 {
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.header-text h1 span {
+    color: #FEAE6F;
+}
+
+.header-text ul {
+    margin: 20px 0;
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-text ul li {
+    list-style: none;
+}
+
+.header-text ul li a {
+    color: #C0F0F7;
+    text-decoration: none;
+    font-size: 30px;
+    position: relative;
+
+    transition: color 0.5s;
+    -webkit-transition: color 0.5s;
+    -moz-transition: color 0.5s;
+    -ms-transition: color 0.5s;
+    -o-transition: color 0.5s;
+}
+
+.header-text ul li a:hover{
+    color: #F6DCAC;
+}
+
+@media only screen and (max-width: 600px) {
+    #header {
+        background-image: url(images/alexis_phone_background.png);
+    }
+
+    .header-text {
+        margin-top: 100%;
+        font-size: 16px;
+    }
+
+    .header-text h1 {
+        font-size: 30px;
+    }
+}
