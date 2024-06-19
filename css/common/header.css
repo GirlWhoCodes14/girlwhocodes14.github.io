@@ -1,0 +1,149 @@
+:root {
+    --header-bgColor: #08102d;
+    --dropdown-nav-bgColor: #0d1a49;
+    --lightest-blue2: #9AC8CD;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--header-bgColor);
+    padding: 0 10%;
+    width: 100%;
+    height: 80px;
+    z-index: 1000;
+}
+
+header img {
+    height: 50px;
+}
+
+header nav, footer nav {
+    float: right;
+    display: block;
+    position: static;
+    width: auto;
+}
+
+/* links (i.e., home, portfolio, services, etc.)*/
+header nav ul li, footer nav ul li {
+    display: inline-block;
+    margin: 10px 20px;
+}
+
+header li, footer li {
+    list-style: none;
+}
+
+.nav-link {
+    position: relative;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+header .nav-link {
+    color: white;
+}
+
+.nav-link.active, .nav-link:hover {
+    transition: 0.3s ease-out;
+    -webkit-transition: 0.3s ease-out;
+    -moz-transition: 0.3s ease-out;
+    -ms-transition: 0.3s ease-out;
+    -o-transition: 0.3s ease-out;
+}
+
+header .nav-link.active, header .nav-link:hover {
+    color: var(--lightest-blue2);
+}
+
+header .nav-link.active {
+    font-size: 16px;
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    color: white;
+    font-size: 25px;
+
+    transition: color 0.5s scale 0.5s;
+    -webkit-transition: color 0.5s scale 0.5s;
+    -moz-transition: color 0.5s scale 0.5s;
+    -ms-transition: color 0.5s scale 0.5s;
+    -o-transition: color 0.5s scale 0.5s;
+}
+
+.menu-toggle:hover {
+    scale: 1.2;
+    color: var(--lightest-blue2);
+}
+
+/* DROPDOWN NAV */
+#dropdown-nav {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 80px;
+    height: 0;
+    width: 100%;
+    background: var(--dropdown-nav-bgColor);
+    overflow: hidden;
+
+    transition: height 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -webkit-transition: height 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -moz-transition: height 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -ms-transition: height 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -o-transition: height 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+#dropdown-nav.open {
+    height: 220px;
+}
+
+#dropdown-nav ul {
+    width: 100%;
+}
+#dropdown-nav li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+#dropdown-nav hr {
+    border: 1px solid --lightest-blue2;
+}
+
+
+@media all and (max-width: 1024px) {
+    header {
+        padding: 5px 8%;
+    }
+
+    header img {
+        height: 42px
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    header img {
+        height: 32px
+    }
+
+    #header-nav {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    #dropdown-nav {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+}
