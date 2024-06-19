@@ -11,6 +11,7 @@
 
     <!-- CSS -->
     <link href="css/common/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/common/page-intro.css" rel="stylesheet" type="text/css" />
     <link href="css/contact.css" rel="stylesheet" type="text/css" />
 
     <!-- to compile the html files -->
@@ -22,28 +23,48 @@
     <div id="header-container"></div>
 
     <main>
-        <div id="contact-intro" class="row">
-            <div class="contact-left">
+        <div class="row page-intro">
+            <!-- Contact Me -->
+            <div class="intro-col-2">
                 <h1 class="page-title">contact.</h1>
-                <p><i class="fa-solid fa-envelope"></i></i>alexis.ayuso.bz@gmail.com</p>
+                <p><i class="fa-solid fa-envelope"></i>alexis.ayuso.bz@gmail.com</p>
                 <div class="social-icons">
                     <a href="https://www.linkedin.com/in/alexisayuso"><i class="fa-brands fa-linkedin"></i>LinkedIn</a>
                     <a href="https://www.youtube.com/@iAmAlexisAyuso"><i class="fa-brands fa-youtube"></i>YouTube</a>
                     <a href="https://github.com/GirlWhoCodes14"><i class="fa-brands fa-github"></i>GitHub</a>
                 </div>
             </div>
+
+            <!-- Intro Image -->
+            <div class="intro-col-1">
+                <img src="images/alexis-right.png" alt="Alexis Ayuso">
+            </div>
         </div>
 
-        <div id="send-email" class="row second">
-            <div class="contact-right">
-                <form name="submit-to-google-sheet" action="">
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="Email" id="" placeholder="Your Email" required>
-                    <textarea name="Message" id="" rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
-                </form>
+        <div class="row second">
+            <h1 class="sub-title">Send me an email</h1>
+            <form name="submit-to-google-sheet" action="">
+                <div class="form-col-1">
+                    <div class="input-form">
+                        <p>Name</p>
+                        <input type="text" name="Name" placeholder="" required>
+                    </div>
 
+                    <div class="input-form">
+                        <p>Email</p>
+                        <input type="email" name="Email" id="" placeholder="" required>
+                    </div>
+                </div>
+
+                <div class="form-col-2 input-form">
+                    <p>Message</p>
+                    <textarea name="Message" id="" rows="5" placeholder=""></textarea>
+                </div>
+            </form>
+
+            <div class="submit">
                 <span id="msg"></span>
+                <button type="submit" class="btn">Send email</button>
             </div>
         </div>
     </main>

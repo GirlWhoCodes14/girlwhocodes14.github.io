@@ -1,3 +1,10 @@
+:root {
+    /* footer */
+    --lightest-blue: #E1F7F5;
+    --light-blue: #1679AB;
+    --blue: #102C57;
+}
+
 footer {
     display: flex;
     align-items: center;
@@ -7,7 +14,7 @@ footer {
     bottom: 0;
     left: 0;
 
-    background: #E1F7F5;
+    background: var(--lightest-blue);
     padding: 8px 10%;
     width: 100%;
     height: 60px;
@@ -18,18 +25,18 @@ footer {
 }
 
 .nav-link.footer-nav {
-    color: #1679AB;
+    color: var(--light-blue);
     font-size: 16px;
     font-weight: 500;
 }
 
 .footer-nav.active, .footer-nav:hover {
-    color: #102C57;
+    color: var(--blue);
 }
 
 footer p {
     text-align: center;
-    color: #1679AB;
+    color: var(--light-blue);
 }
 
 @media all and (max-width: 1024px) {
