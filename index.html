@@ -13,27 +13,31 @@
   <meta property="type" content="website"/>
   <meta property="og:url" content="https://alexisayuso.com"/>
 
+  <!-- CSS -->
   <link href="css/common/style.css" rel="stylesheet" type="text/css" />
   <link href="css/home.css" rel="stylesheet" type="text/css" />
 
-  <script src="https://kit.fontawesome.com/5e4a65d337.js" crossorigin="anonymous"></script>
+  <!-- to compile the html files -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
 <body>
-
-  <!--------------------------------------- Header w/ navbar and intro------------------------------------------->
-  <!-- Header.html -->
+  <!-- Header -->
   <div id="header-container"></div>
 
   <main id="home-container">
-    <div class="banner">
-      <img src="images/alexis_background.png" alt="Alexis Ayuso's banner">
+    <div class="row banner">
+      <img class="larger-img" src="images/alexis_background.png" alt="Alexis Ayuso's banner">
+      <img class="smaller-img" src="images/alexis_background_phone.png" alt="Alexis Ayuso">
     </div>
 
-    <div class="latest-accomplishments">
+    <div class="row second">
       <div class="section-header">
         <h3>some of my latest work</h3>
+
+        <iframe width="auto" height="auto" src="https://www.youtube.com/embed/5VqnkXPP07s?si=JvpWNEQ7Gd0i3yRP&amp;controls=0?autoplay=1&mute=1" title="CrosSight Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="auto" height="auto" src="https://www.youtube.com/embed/UdHUQAsHCoo?si=1AmJ4NqsTtL6DPrW?autoplay=1&mute=1" title="Sun Moon Lake (3D Terrain)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="auto" height="auto" src="https://www.youtube.com/embed/d6YBFvjHhOU?si=65mp89c7QAjSsYSs&amp;controls=0?autoplay=1&mute=1" title="(Terrain Scene) Sun Moon Lake" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </div>
     </div>
   </main>
@@ -43,7 +47,6 @@
 
   <!-- Javascript -->
   <script src="javascript/common/script.js"></script>
-  <script src="javascript/contact-message.js"></script>
 </body>
 
 </html>

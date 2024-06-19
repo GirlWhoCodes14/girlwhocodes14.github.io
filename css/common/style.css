@@ -4,23 +4,32 @@ html {
   width: 100%;
 }*/
 
-* {
-  margin: 0;
-  padding: 0;
-  /*font-family: 'Poppins', sans-serif;*/
-  font-family: "Quicksand", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-  box-sizing: border-box;
-}
-
 html {
+  min-height: 100%;
+  width: 100%;
   scroll-behavior: smooth;
 }
 
 body {
   background: #fff;
   color: #000000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  box-sizing: border-box;
+
+  /*
+  transition: 1.0s ease-in-out;
+  -webkit-transition: 1.0s ease-in-out;
+  -moz-transition: 1.0s ease-in-out;
+  -ms-transition: 1.0s ease-in-out;
+  -o-transition: 1.0s ease-in-out;
+  */
 }
 
 .page-title {
@@ -34,7 +43,30 @@ body {
   color: #102C57;
 }
 
+.row {
+  padding: 5% 10%;
+  border-bottom: #dddddd solid 1px;
+  box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
+}
+
+.row.second {
+  background-color: #F5F7F8;
+}
+
+.section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.sub-title {
+  font-family: "Comfortaa", sans-serif;
+}
+
 /* -------------------------- CSS for small screen --------------------------- */
+
+
 
 /* responsiveness for phone screens */
 @media only screen and (max-width: 600px) {
@@ -43,3 +75,35 @@ body {
   }
 }
 
+/*------------------------------------*\
+    $SMALL COMPUTER SCREENS
+\*------------------------------------*/
+@media all and (max-width: 1034px) {
+  .row {
+    padding: 5%;
+  }
+}
+
+/*------------------------------------*\
+    $IPAD AND TABLET
+\*------------------------------------*/
+
+@media only screen and (max-width: 767px) {
+
+}
+
+/*------------------------------------*\
+    $IPHONE 4S LANDSCAPE
+\*------------------------------------*/
+
+@media only screen and (max-width : 480px) {
+
+}
+
+/*------------------------------------*\
+    $IPHONE 4S
+\*------------------------------------*/
+
+@media only screen and (max-width : 320px) {
+
+}

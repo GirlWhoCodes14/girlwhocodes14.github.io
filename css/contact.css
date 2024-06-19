@@ -1,11 +1,3 @@
-.contact-left {
-    flex-basis: 35%;
-}
-
-.contact-right {
-    flex-basis: 60%;
-}
-
 .contact-left p {
     margin-top: 30px;
 }
@@ -47,10 +39,6 @@
     display: inline-block;
     background: #FEAE6F;
     color: #102C57;
-}
-
-.contact-right {
-    width: 100%;
 }
 
 form input, form textarea {

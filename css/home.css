@@ -1,8 +1,5 @@
 .banner {
-    width: 100%;
     padding: 0 10%;
-    border-bottom: #dddddd solid 1px;
-    /*box-shadow: 0 4px 6px -6px #0E46A3;*/
 }
 
 main img {
@@ -10,6 +7,10 @@ main img {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
+}
+
+.smaller-img {
+    display: none;
 }
 
 .section-header h3 {
@@ -88,6 +89,14 @@ main img {
 }
 
 @media only screen and (max-width: 600px) {
+    .smaller-img {
+        display: block;
+    }
+
+    .larger-img {
+        display: none;
+    }
+
     #header {
         background-image: url(images/alexis_phone_background.png);
     }

@@ -2,11 +2,10 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
-    background: #1E0342;
-    padding: 5px 10vh;
+    background: #08102d;
+    padding: 0 10%;
     width: 100%;
-    /*height: 65px;*/
+    height: 80px;
     z-index: 1000;
 }
 
@@ -14,7 +13,7 @@ header img {
     height: 50px;
 }
 
-nav {
+header nav, footer nav {
     float: right;
     display: block;
     position: static;
@@ -22,36 +21,99 @@ nav {
 }
 
 /* links (i.e., home, portfolio, services, etc.)*/
-nav ul li {
-    display: inline-block; /* makes all the links horizontally aligned*/
-    list-style: none; /* removes bullet point symbols */
+header nav ul li, footer nav ul li {
+    display: inline-block;
     margin: 10px 20px;
 }
 
+header li, footer li {
+    list-style: none;
+}
 
 .nav-link {
-    color: #fff;
+    position: relative;
     text-decoration: none;
     font-size: 18px;
-    position: relative;
+}
+
+header .nav-link {
+    color: #fff;
 }
 
 .nav-link.active, .nav-link:hover {
-    color: #1679AB;
-    transition: 0.2s;
-    -webkit-transition: 0.2s;
-    -moz-transition: 0.2s;
-    -ms-transition: 0.2s;
-    -o-transition: 0.2s;
+    transition: 0.3s ease-out;
+    -webkit-transition: 0.3s ease-out;
+    -moz-transition: 0.3s ease-out;
+    -ms-transition: 0.3s ease-out;
+    -o-transition: 0.3s ease-out;
 }
 
-nav .fa-solid {
+header .nav-link.active, header .nav-link:hover {
+    color: #9AC8CD;
+}
+
+header .nav-link.active {
+    font-size: 16px;
+}
+
+.menu-toggle {
     display: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 25px;
+
+    transition: color 0.5s scale 0.5s;
+    -webkit-transition: color 0.5s scale 0.5s;
+    -moz-transition: color 0.5s scale 0.5s;
+    -ms-transition: color 0.5s scale 0.5s;
+    -o-transition: color 0.5s scale 0.5s;
 }
 
-@media all and (max-width: 1264px) {
+.menu-toggle:hover {
+    scale: 1.2;
+    color: #9AC8CD;
+}
+
+/* DROPDOWN NAV */
+#dropdown-nav {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 80px;
+    height: 0;
+    width: 100%;
+    background: #0d1a49;
+    overflow: hidden;
+
+    transition: height 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -webkit-transition: height 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -moz-transition: height 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -ms-transition: height 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -o-transition: height 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+#dropdown-nav.open {
+    height: 220px;
+}
+
+#dropdown-nav ul {
+    width: 100%;
+}
+#dropdown-nav li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+#dropdown-nav hr {
+    border: 1px solid #9AC8CD;
+}
+
+
+@media all and (max-width: 1024px) {
     header {
-        padding: 5px 2vh;
+        padding: 5px 8%;
     }
 
     header img {
@@ -64,41 +126,18 @@ nav .fa-solid {
         height: 32px
     }
 
-    nav .fa-solid {
+    #header-nav {
+        display: none;
+    }
+
+    .menu-toggle {
         display: block;
-        color: #fff;
-        font-size: 25px;
     }
 
-    nav ul {
-        background: #102C57;
-        position: fixed;
-        top: 0;
-
-        /*hides nav bar*/
-        right: -200px;
-
-        width: 200px;
-        height: 100vh;
-        padding-top: 50px;
-        z-index: 2;
-
-        transition: right 0.5s;
-        -webkit-transition: right 0.5s;
-        -moz-transition: right 0.5s;
-        -ms-transition: right 0.5s;
-        -o-transition: right 0.5s;
-    }
-
-    nav ul li {
+    #dropdown-nav {
         display: block;
-        margin: 25px;
     }
+}
 
-    nav ul .fa-solid {
-        position: absolute;
-        top: 25px;
-        left: 25px;
-        cursor: pointer;
-    }
+@media only screen and (max-width: 425px) {
 }

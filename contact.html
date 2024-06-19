@@ -9,9 +9,11 @@
     <title>About Alexis Ayuso | Software Developer</title>
     <meta name="description" content="Learn about Alexis Ayuso">
 
+    <!-- CSS -->
     <link href="css/common/style.css" rel="stylesheet" type="text/css" />
     <link href="css/contact.css" rel="stylesheet" type="text/css" />
 
+    <!-- to compile the html files -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
@@ -20,7 +22,7 @@
     <div id="header-container"></div>
 
     <main>
-        <div id="" class="row">
+        <div id="contact-intro" class="row">
             <div class="contact-left">
                 <h1 class="page-title">contact.</h1>
                 <p><i class="fa-solid fa-envelope"></i></i>alexis.ayuso.bz@gmail.com</p>
@@ -32,7 +34,7 @@
             </div>
         </div>
 
-        <div class="row">
+        <div id="send-email" class="row second">
             <div class="contact-right">
                 <form name="submit-to-google-sheet" action="">
                     <input type="text" name="Name" placeholder="Your Name" required>
@@ -40,9 +42,9 @@
                     <textarea name="Message" id="" rows="6" placeholder="Your Message"></textarea>
                     <button type="submit" class="btn btn2">Submit</button>
                 </form>
-    
+
                 <span id="msg"></span>
-                </div>
+            </div>
         </div>
     </main>
 
@@ -51,7 +53,7 @@
 
     <!-- Javascript -->
     <script src="javascript/common/script.js"></script>
-    <script src="javascript/script.js"></script>
+    <script src="javascript/contact-message.js"></script>
 </body>
 
 </html>
