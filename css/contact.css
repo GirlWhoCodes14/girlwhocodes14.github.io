@@ -33,6 +33,10 @@
     -o-transition: transform 0.5s;
 }
 
+.social-icons a div {
+    text-align: center;
+}
+
 .social-icons a:hover {
     color: #FEAE6F;
 
@@ -41,6 +45,11 @@
     -moz-transform: translateY(-5px);
     -ms-transform: translateY(-5px);
     -o-transform: translateY(-5px);
+}
+
+.form-section {
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 form {
@@ -61,7 +70,7 @@ form {
 
 .input-form p {
     margin-bottom: 5px;
-    font-size: 15px;
+    font-size: 16px;
     color: var(--blue);
 }
 

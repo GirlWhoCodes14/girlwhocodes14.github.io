@@ -25,7 +25,7 @@
     <main>
         <div class="row page-intro">
             <!-- Contact Me -->
-            <div class="intro-col-2">
+            <div class="intro-txt-col">
                 <h1 class="page-title">contact.</h1>
                 <div class="email">
                     <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
@@ -49,35 +49,37 @@
             </div>
 
             <!-- Intro Image -->
-            <div class="intro-col-1">
-                <img src="images/alexis-right.png" alt="Alexis Ayuso">
+            <div class="intro-img-col">
+                <img src="images/alexis_graduation_hd_crop.png" alt="Alexis Ayuso">
             </div>
         </div>
 
         <div class="row second">
             <h1 class="sub-title">Send me an email</h1>
-            <form name="submit-to-google-sheet" action="">
-                <div class="form-col-1">
-                    <div class="input-form">
-                        <p>Name</p>
-                        <input type="text" name="Name" placeholder="" required>
+            <div class="form-section">
+                <form name="submit-to-google-sheet" action="">
+                    <div class="form-col-1"> 
+                        <div class="input-form">
+                            <p>Name</p>
+                            <input type="text" name="Name" placeholder="" required>
+                        </div>
+
+                        <div class="input-form">
+                            <p>Email</p>
+                            <input type="email" name="Email" id="" placeholder="" required>
+                        </div>
                     </div>
 
-                    <div class="input-form">
-                        <p>Email</p>
-                        <input type="email" name="Email" id="" placeholder="" required>
+                    <div class="form-col-2 input-form">
+                        <p>Message</p>
+                        <textarea name="Message" id="" rows="5" placeholder=""></textarea>
                     </div>
-                </div>
+                </form>
 
-                <div class="form-col-2 input-form">
-                    <p>Message</p>
-                    <textarea name="Message" id="" rows="5" placeholder=""></textarea>
+                <div class="submit">
+                    <span id="msg"></span>
+                    <button type="submit" class="btn">Send email</button>
                 </div>
-            </form>
-
-            <div class="submit">
-                <span id="msg"></span>
-                <button type="submit" class="btn">Send email</button>
             </div>
         </div>
     </main>

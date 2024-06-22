@@ -1,6 +1,6 @@
 /* set active page in navbar */
 const navLinks = document.querySelectorAll('.nav-link');
-const footerNav = document.querySelectorAll('.nav-link.footer-nav');
+const footerNav = document.querySelectorAll('.nav-link.footer-nav'); // footer.html
 
 const currentPath = window.location.pathname; // Get the current page path
 
@@ -10,6 +10,7 @@ navLinks.forEach(function(link) {
   }
 });
 
+// footer.html
 footerNav.forEach(function(link) {
   if (link.href.endsWith(currentPath)) {
     link.classList.add('active');

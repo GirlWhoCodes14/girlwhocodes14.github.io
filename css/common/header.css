@@ -99,7 +99,7 @@ header .nav-link.active {
 }
 
 #dropdown-nav.open {
-    height: 220px;
+    height: auto;
 }
 
 #dropdown-nav ul {
