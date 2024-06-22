@@ -1,35 +1,45 @@
 .page-intro {
     display: flex;
     gap: 3rem;
-    padding: 5% 10%;
+    padding: 5% 15%;
+}
+
+.page-intro.sub-page {
+    padding: 5% 12%;
 }
 
 .intro-img-col {
-    flex: 30%;
+    flex: 35%;
+    margin: auto;
     display: flex;
     text-align: center;
-    margin: auto;
 }
 
-.intro-img-col img {
+.page-intro.sub-page .intro-img-col {
+    flex: 50%;
+}
+
+.intro-img-col img, .intro-img-col iframe {
     margin: auto;
     object-fit: contain;
     min-width: 150px;
-    max-width: min(325px, 100%);
-    /*max-height: 350px;*/
-    /*
-    width: auto;
-    height: auto;
-    */
+    max-width: min(350px, 100%);
+}
+
+.page-intro.sub-page .intro-img-col img, .page-intro.sub-page .intro-img-col iframe {
+    max-width: none;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 16 / 9;
 }
 
 .intro-txt-col {
-    flex: 70%;
+    flex: 50%;
     margin: auto;
-    /*
-    margin: auto;
-    padding: auto;
-    */
+}
+
+.page-intro.sub-page .intro-txt-col {
+    flex: 60%;
 }
 
 .intro-txt-col .caption {
@@ -42,6 +52,8 @@
     line-height: 1.5;
     letter-spacing: 0.2 em;
     color: #0C1844;
+
+    text-align: justify;
 }
 
 

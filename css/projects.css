@@ -1,0 +1,38 @@
+.model {
+    width: 100%;
+    aspect-ratio: 16/9;
+}
+
+.section-header {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.paragraph {
+    margin: 0 5%;
+}
+
+.paragraph .section-header {
+    margin-bottom: 20px;
+}
+
+.paragraph p {
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.img-compare {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 15px;
+    justify-content: center;
+
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.img-compare img {
+    max-height: 400px;
+    max-width: 500px;
+    object-fit: contain;
+}

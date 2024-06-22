@@ -69,9 +69,15 @@ p {
 }
 
 .row {
-  padding: 5% 10%;
+  padding: 5% 12%;
   border-bottom: #dddddd solid 1px;
   box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
+}
+
+.center {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  text-align: center;
 }
 
 .row.second {
