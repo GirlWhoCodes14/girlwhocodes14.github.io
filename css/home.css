@@ -40,7 +40,6 @@ main img {
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 
 .icon {
@@ -49,13 +48,14 @@ main img {
     text-align: center;
     outline: none;
     border: none;
-    padding: 0 20px;
+    padding: 0 5px;
     cursor: pointer;
+    width: 5%;
 }
 
 .icon i {
     color: darkblue;
-    font-size: 40px;
+    font-size: 30px;
     transition: 0.3s ease-out;
     -webkit-transition: 0.3s ease-out;
     -moz-transition: 0.3s ease-out;
@@ -71,29 +71,14 @@ main img {
 .cover {
     position: relative;
     width: 90%;
-    height: 50%;
-}
-
-.cover::before {
-    position: absolute;
-    content: "";
-    left: 0;
-    top: 0;
-    z-index: 99;
-    height: 100%;
-    width: 50px;
-    background-image: linear-gradient(90deg, black, transparent);
-}
-
-.cover::after {
-    position: absolute;
-    content: "";
-    right: 0;
-    top: 0;
-    z-index: 99;
-    height: 100%;
-    width: 50px;
-    background-image: linear-gradient(-90deg, black, transparent);
+    z-index: 200;
+    border: 1px solid #ddd;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
 }
 
 .scroll-media {
@@ -104,15 +89,22 @@ main img {
     position: relative;
     scroll-behavior: smooth;
     white-space: nowrap;
+    gap: 0 10px;
+    padding: 10px;
 }
 
+.scroll-media::-webkit-scrollbar {
+    display: none;
+    height: 5px;
+}
+
+/* Media element */
 .media-container {
-    margin: 0 10px;
     cursor: pointer;
 }
 
 .media-container iframe {
-    width: 350px;
+    width: 18em;
     aspect-ratio: 16/9;
 }
 
@@ -153,3 +145,52 @@ main img {
         font-size: 30px;
     }
 }
+
+
+/*
+.cover::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    z-index: 99;
+    height: 100%;
+    width: 50px;
+    background-image: linear-gradient(90deg, black, transparent);
+}
+
+.cover::after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    z-index: 99;
+    height: 100%;
+    width: 50px;
+    background-image: linear-gradient(-90deg, black, transparent);
+}
+*/
+
+/*
+.scroll-media::-webkit-scrollbar-track {
+    color: #ddd;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.scroll-media::-webkit-scrollbar-thumb {
+    background: #9AC8CD;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.scroll-media::-webkit-scrollbar-thumb:hover {
+    background: gray;
+}
+*/
