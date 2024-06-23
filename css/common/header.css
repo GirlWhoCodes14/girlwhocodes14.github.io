@@ -99,12 +99,14 @@ header .nav-link.active {
 }
 
 #dropdown-nav.open {
-    height: auto;
+    height: 170px;
 }
 
 #dropdown-nav ul {
     width: 100%;
+    height: 100%;
 }
+
 #dropdown-nav li {
     display: flex;
     align-items: center;
