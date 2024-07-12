@@ -13,6 +13,11 @@ main img {
     display: none;
 }
 
+#home .section-header {
+    text-align: center;
+}
+
+/*
 .section-header h3 {
     text-align: center;
     display: block;
@@ -23,6 +28,7 @@ main img {
     letter-spacing: 0.2rem;
     font-family: "proxima nova semibold", "Helvetica Neue", Helvetica, Arial, Sans-serif;
 }
+    */
 
 .latest-accomplishments {
     padding: 10vh;

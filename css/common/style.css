@@ -45,6 +45,18 @@ body {
   */
 }
 
+a {
+  color: var(--blue);
+  transition: 0.3s ease-out;
+  -webkit-transition: 0.3s ease-out;
+  -moz-transition: 0.3s ease-out;
+  -ms-transition: 0.3s ease-out;
+  -o-transition: 0.3s ease-out;
+}
+
+a:hover {
+  color: var(--light-blue);
+}
 /*
 p {
   font-size: 18px;
@@ -91,11 +103,42 @@ p {
   text-align: center;
 }
 
+.section-header {
+  font-size: 25px;
+  font-weight: 500;
+  color: #102C57
+}
+
 .sub-title {
   font-size: 30px;
   font-family: "Comfortaa", sans-serif;
 }
 
+/* ----------------------- Transition between Pages --------------------------------- */
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: rotateX(-10deg);
+    -webkit-transform: rotateX(-10deg);
+    -moz-transform: rotateX(-10deg);
+    -ms-transform: rotateX(-10deg);
+    -o-transform: rotateX(-10deg);
+}
+
+  to {
+    opacity: 1;
+    transform: rotateX(0);
+    -webkit-transform: rotateX(0);
+    -moz-transform: rotateX(0);
+    -ms-transform: rotateX(0);
+    -o-transform: rotateX(0);
+  }
+}
+
+main {
+  animation: transitionIn 1s;
+  -webkit-animation: transitionIn 1s;
+}
 
 
 /* -------------------------- CSS for small screen --------------------------- */
