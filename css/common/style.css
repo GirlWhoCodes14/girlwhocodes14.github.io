@@ -87,9 +87,11 @@ p {
 }
 
 .center {
-  margin-top: 25px;
-  margin-bottom: 25px;
   text-align: center;
+}
+
+.center .section-header {
+  margin-bottom: 15px;
 }
 
 .row.second {
