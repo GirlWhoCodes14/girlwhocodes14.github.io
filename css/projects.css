@@ -25,7 +25,7 @@
 }
 
 .lists {
-    padding: 0 8%;
+    padding-left: 8%;
 }
 
 .lists li {
@@ -62,12 +62,13 @@
 }
 
 .demo-video iframe {
-    width: 50em;
+    width: 85%;
     aspect-ratio: 16/9;
 }
 
 .project-skills {
     display: flex;
+    flex-wrap: wrap;
     gap: 15px;
     margin-top: 15px;
 }
@@ -81,4 +82,13 @@
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
+}
+
+.repo-button {
+    margin-top: 20px;
+}
+
+.repo-button i {
+    color: white;
+    margin-left: 10px;
 }

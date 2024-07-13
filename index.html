@@ -83,11 +83,6 @@
       <img class="smaller-img" src="images/alexis_background_phone.png" alt="Alexis Ayuso">
     </div>
 
-    <div class="row">
-      <h3>Explore</h3>
-      <p>Explore my website to get to know me and learn my capabilities. </p>
-    </div>
-
     <div class="full row second">
       <div class="section-header">
         <h3 class="section-header">Project Videos</h3> <br>
@@ -95,12 +90,12 @@
 
       <div class="main-scroll">
         <!-- Scroll Left Button -->
-        <div class="icon" onclick="scroll_left()"><i class="fa-solid fa-chevron-left"></i></div>
+        <div class="icon" onclick="video_scroll_left()"><i class="fa-solid fa-chevron-left"></i></div>
 
         <!-- Overlay of Media Scroll -->
         <div class="cover">
           <!-- Media Scroll -->
-          <div class="scroll-media">
+          <div id="video-scroller" class="scroll-media">
             <!-- CrosSight Demo -->
             <div class="media-container">
               <iframe width="auto" height="auto" src="https://www.youtube.com/embed/5VqnkXPP07s?si=JvpWNEQ7Gd0i3yRP&amp;controls=0?autoplay=1&mute=1" title="CrosSight Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -134,9 +129,60 @@
         </div>
 
         <!-- Scroll Right Button -->
-        <div class="icon" onclick="scroll_right()"><i class="fa-solid fa-chevron-right"></i></div>
+        <div class="icon" onclick="video_scroll_right()"><i class="fa-solid fa-chevron-right"></i></div>
       </div>
     </div>
+
+    <div class="full row">
+      <div class="section-header">
+        <h3 class="section-header">My Accomplishments</h3> <br>
+      </div>
+
+      <div class="main-scroll">
+        <!-- Scroll Left Button -->
+        <div class="icon" onclick="accomplishments_scroll_left()"><i class="fa-solid fa-chevron-left"></i></div>
+
+        <!-- Overlay of Media Scroll -->
+        <div class="cover">
+          <!-- Media Scroll -->
+          <div id="accomplishments-scroller" class="scroll-media">
+            <!-- Bachelors Degree (Chinese) -->
+            <div class="media-container">
+              <img class="portrait" src="images/accomplishments/Alexis-CSIE-bachelors-degree-zh.jpg" alt="Alexis' Bachelor's Degree in Computer Science and Information Engineering (Chinese Version)">
+            </div>
+
+            <!-- Bachelors Degree (English) -->
+            <div class="media-container">
+              <img class="landscape" src="images/accomplishments/Alexis-CSIE-bachelors-degree-en.jpg" alt="Alexis' Bachelor's Degree in Computer Science and Information Engineering (English Version)">
+            </div>
+
+            <!-- County Magistrate Award -->
+            <div class="media-container">
+              <img class="portrait" src="images/accomplishments/County Magistrate Award.jpg" alt="Alexis' County Magistrate Award for Ranking 3rd in Graduating Class">
+            </div>
+
+            <!-- Undergrad Project Award (Chinese) -->
+            <div class="media-container">
+              <img class="portrait" src="images/accomplishments/112 CSIE Undergrad Award-zh.jpg" alt="Alexis and Zenroy's First Place Award for 112 CSIE Undergraduate Project (Chinese Version)">
+            </div>
+
+            <!-- Undergrad Project Award (English) -->
+            <div class="media-container">
+              <img class="portrait" src="images/accomplishments/112 CSIE Undergrad Award-en.jpg" alt="Alexis and Zenroy's First Place Award for 112 CSIE Undergraduate Project (English Version)">
+            </div>
+
+            <!-- Associates Degree -->
+            <div class="media-container">
+              <img class="landscape" src="images/accomplishments/Alexis Ayuso - SJCJC Associate's Degree in Computer Science.jpg" alt="Alexis' Bachelor's Degree in Computer Science">
+            </div>
+          </div>
+        </div>
+
+        <!-- Scroll Right Button -->
+        <div class="icon" onclick="accomplishments_scroll_right()"><i class="fa-solid fa-chevron-right"></i></div>
+      </div>
+    </div>
+
   </main>
 
 
@@ -163,14 +209,24 @@
   <script src="javascript/common/script.js"></script>
 
   <script>
-    function scroll_left() {
-      var left = document.querySelector(".scroll-media");
+    function video_scroll_left() {
+      var left = document.querySelector("#video-scroller");
       left.scrollBy(-300, 0);
     }
 
-    function scroll_right() {
-      var right = document.querySelector(".scroll-media");
+    function video_scroll_right() {
+      var right = document.querySelector("#video-scroller");
       right.scrollBy(300, 0);
+    }
+
+    function accomplishments_scroll_left() {
+      var left = document.querySelector("#accomplishments-scroller");
+      left.scrollBy(-350, 0);
+    }
+
+    function accomplishments_scroll_right() {
+      var right = document.querySelector("#accomplishments-scroller");
+      right.scrollBy(350, 0);
     }
   </script>
 </body>
