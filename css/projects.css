@@ -17,10 +17,29 @@
     text-align: justify;
 }
 
+.sub-section {
+    margin: 20px 0;
+}
+.sub-section p {
+    margin-top: 8px;
+}
+
+.lists {
+    padding: 0 8%;
+}
+
+.lists li {
+    margin: 10px;
+}
+
+.lists span {
+    font-weight: 500;
+}
+
 .img-compare {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px 15px;
+    gap: 10px 5%;
     justify-content: center;
 
     margin-top: 15px;
@@ -28,8 +47,38 @@
 }
 
 .img-compare img {
-    max-height: 400px;
-    max-width: 500px;
+    max-height: 550px;
+    max-width: 650px;
     min-width: 150px;
     object-fit: contain;
+}
+
+.full-img {
+    max-width: 90%;
+}
+
+.med-img {
+    max-width: 80%
+}
+
+.demo-video iframe {
+    width: 50em;
+    aspect-ratio: 16/9;
+}
+
+.project-skills {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+.project-skills span {
+    background-color: #F5F7F8;
+    border: solid 1x #ddd;
+    box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
+    padding: 5px 8px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
