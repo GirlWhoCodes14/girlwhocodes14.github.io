@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>CrosSight | Alexis Ayuso</title>
+  <meta name="description" content="Learn about Alexis Ayuso">
+
+  <!-- CSS -->
+  <link href="../css/common/style.css" rel="stylesheet" type="text/css" />
+  <link href="../css/common/page-intro.css" rel="stylesheet" type="text/css" />
+  <link href="../css/projects.css" rel="stylesheet" type="text/css" />
+
+  <!-- to compile the html files -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+  <!-- Header -->
+  <div id="header-container"></div>
+
+  <main>
+    <!-- Introduction: CrosSight -->
+    <div class="row page-intro sub-page">
+        <div class="intro-txt-col">
+            <h1 class="page-title sub-page">CrosSight</h1>
+            <p class="caption">Android APP</p>
+            <div class="project-skills"><span>Kotlin</span><span>Python</span><span>Tensorflow</span><span>Roboflow</span><span>OpenCV</span></div>
+        </div>
+        <div class="intro-img-col">
+            <img src="../images/projects/crossight/crosSight_logo.jpg" alt="CrosSight logo">
+        </div>
+    </div>
+
+    <div class="row second">
+        <h1 class="section-header">Poster</h1>
+
+        <div class="center">
+            <img class="full-img" src="../images/projects/crossight/CrosSight-poster.png" alt="CrosSight poster">
+        </div>
+    </div>
+
+    <div class="row">
+        <h1 class="section-header">Overview</h1>
+
+        <div class="paragraph">
+            <p>Pedestrian Crossing Mobile Application for the Visually Impaired by Alexis Ayuso and Zenroy Chance.</p>
+            <p>The app provides real-time feedback through audio cues, voice announcements, haptic signals, and screen visuals to guide users on when to cross and navigate the crosswalk safely. The user interface is accessible through TalkBack for sight-free navigation.</p>
+            <p>CrosSight leverages object detection with a MobileNetV2 architecture to identify pedestrian signals and crosswalks. The object detection model achieved a high Mean Average Precision (mAP) of 97.7%, indicating excellent accuracy in detecting pedestrian signals and crosswalks. Training results showed a decrease in box, class, and object loss, signifying effective model learning.</p>
+            <p>CrosSight complements traditional aids like white canes and guide dogs by providing real-time information and navigation assistance. This application has the potential to significantly improve the mobility and independence of visually impaired people.</p>
+        </div>
+    </div>
+
+    <div class="row second">
+        <h1 class="section-header">CrosSight Demo Video</h1>
+
+        <!-- CrosSight Demo -->
+        <div class="center">
+            <div class="demo-video">
+                <iframe width="auto" height="auto" src="https://www.youtube.com/embed/5VqnkXPP07s?si=JvpWNEQ7Gd0i3yRP" title="CrosSight Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <h1 class="section-header">UI/UX</h1>
+        <div class="paragraph">
+            <p>In the CrosSight settings, users can enable and disable various alert preferences.</p>
+
+            <ul class="lists">
+                <li><span>Screen Visuals</span> flashes a green or red translucent color to indicate whether you can cross the street, and it displays phrases to navigate the user on the crosswalk.</li>
+                <li><span>Sound</span> plays a ticking pattern for when to cross (fast ticking) and when to wait (slow ticking).</li>
+                <li><span>Voice Announcements</span> announces how to navigate on the crosswalk.</li>
+                <li><span>Vibration</span> vibrates when to cross (fast vibration) and when to wait (slow vibration).</li>
+            </ul>
+
+            <p>Additionally, CrosSight is available in both English and traditional Chinese. </p>
+        </div>
+
+        <div class="img-compare">
+            <img src="../images/projects/crossight/CrosSight-en.jpg" alt="CrosSight (English version)">
+            <img src="../images/projects/crossight/CrosSight-zh.jpg" alt="CrosSight (Chinese version)">
+        </div>
+    </div>
+
+    <div class="row second">
+        <div class="img-compare">
+            <img src="../images/projects/crossight/CrosSight-green-light.jpg" alt="CrosSight at a Green Light">
+            <img src="../images/projects/crossight/CrosSight-red-light.jpg" alt="CrosSight at a Red Light">
+        </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <div id="footer-container"></div>
+
+  <!-- Javascript -->
+  <script src="../javascript/common/subpage-add-header.js"></script>
+</body>
+
+</html>
