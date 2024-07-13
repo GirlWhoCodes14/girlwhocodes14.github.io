@@ -26,6 +26,10 @@ header nav, footer nav {
     width: auto;
 }
 
+.my-logo {
+    text-decoration: none;
+}
+
 /* links (i.e., home, portfolio, services, etc.)*/
 header nav ul li, footer nav ul li {
     display: inline-block;
