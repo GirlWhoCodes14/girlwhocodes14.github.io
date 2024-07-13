@@ -25,21 +25,64 @@
   <!-- Header -->
   <div id="header-container"></div>
 
-  <main id="home-container">
+  <main id="home">
     <div class="row banner">
       <img class="larger-img" src="images/alexis_background.png" alt="Alexis Ayuso's banner">
       <img class="smaller-img" src="images/alexis_background_phone.png" alt="Alexis Ayuso">
     </div>
 
-    <div class="row second">
-      <div class="section-header">
-        <h3>some of my latest work</h3>
+    <div class="row">
+      <h3>Explore</h3>
+      <p>Explore my website to get to know me and learn my capabilities. </p>
+    </div>
 
-        <div class="videos">
-          <iframe width="auto" height="auto" src="https://www.youtube.com/embed/5VqnkXPP07s?si=JvpWNEQ7Gd0i3yRP&amp;controls=0?autoplay=1&mute=1" title="CrosSight Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-          <iframe width="auto" height="auto" src="https://www.youtube.com/embed/UdHUQAsHCoo?si=1AmJ4NqsTtL6DPrW?autoplay=1&mute=1" title="Sun Moon Lake (3D Terrain)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-          <iframe width="auto" height="auto" src="https://www.youtube.com/embed/d6YBFvjHhOU?si=65mp89c7QAjSsYSs&amp;controls=0?autoplay=1&mute=1" title="(Terrain Scene) Sun Moon Lake" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <div class="full row second">
+      <div class="section-header">
+        <h3 class="section-header">Project Videos</h3> <br>
+      </div>
+
+      <div class="main-scroll">
+        <!-- Scroll Left Button -->
+        <div class="icon" onclick="scroll_left()"><i class="fa-solid fa-chevron-left"></i></div>
+
+        <!-- Overlay of Media Scroll -->
+        <div class="cover">
+          <!-- Media Scroll -->
+          <div class="scroll-media">
+            <!-- CrosSight Demo -->
+            <div class="media-container">
+              <iframe width="auto" height="auto" src="https://www.youtube.com/embed/5VqnkXPP07s?si=JvpWNEQ7Gd0i3yRP&amp;controls=0?autoplay=1&mute=1" title="CrosSight Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <!-- Sun Moon Lake (3D Terrain Game) -->
+            <div class="media-container">
+              <iframe width="auto" height="auto" src="https://www.youtube.com/embed/UdHUQAsHCoo?si=1AmJ4NqsTtL6DPrW&amp;controls=0?autoplay=1&mute=1" title="Sun Moon Lake (3D Terrain)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <!-- Supreme Court of Belize (3D Model) -->
+            <div class="media-container">
+              <iframe width="auto" height="auto" src="https://www.youtube.com/embed/YP1U27tXZxc?si=rDZhf3rEIbRYie8A&amp;controls=0?autoplay=1&mute=1" title="Supreme Court of Belize (3D Model)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <!-- Report Card Generator (C++) -->
+            <div class="media-container">
+              <iframe width="auto" height="auto" src="https://www.youtube.com/embed/yBwE5zDrRcI?si=253tBxpeJWI4DYYA&amp;controls=0?autoplay=1&mute=1" title="Report Card Generator" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <!-- Introduction to Virtual Reality at NDHU -->
+            <div class="media-container">
+              <iframe width="auto" height="auto" src="https://www.youtube.com/embed/ygq8nLQYDfw?si=6H0C0BW-2MG9EoFm&amp;controls=0?autoplay=1&mute=1" title="Introduction to Virtual Reality at NDHU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <!-- Sun Moon Lake (3D Terrain Scene) -->
+            <div class="media-container">
+              <iframe width="auto" height="auto" src="https://www.youtube.com/embed/d6YBFvjHhOU?si=65mp89c7QAjSsYSs&amp;controls=0?autoplay=1&mute=1" title="(Terrain Scene) Sun Moon Lake" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+          </div>
         </div>
+
+        <!-- Scroll Right Button -->
+        <div class="icon" onclick="scroll_right()"><i class="fa-solid fa-chevron-right"></i></div>
       </div>
     </div>
   </main>
@@ -49,6 +92,18 @@
 
   <!-- Javascript -->
   <script src="javascript/common/script.js"></script>
+
+  <script>
+    function scroll_left() {
+      var left = document.querySelector(".scroll-media");
+      left.scrollBy(-300, 0);
+    }
+
+    function scroll_right() {
+      var right = document.querySelector(".scroll-media");
+      right.scrollBy(300, 0);
+    }
+  </script>
 </body>
 
 </html>

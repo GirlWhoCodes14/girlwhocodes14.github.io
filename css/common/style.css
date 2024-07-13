@@ -22,6 +22,7 @@ html {
 }
 
 body {
+  height: 100%;
   background: white;
   color: black;
 }
@@ -32,6 +33,7 @@ body {
   font-family: "Quicksand", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
+  font-size: 18px;
   box-sizing: border-box;
 
   /*
@@ -43,21 +45,51 @@ body {
   */
 }
 
+a {
+  color: var(--blue);
+  transition: 0.3s ease-out;
+  -webkit-transition: 0.3s ease-out;
+  -moz-transition: 0.3s ease-out;
+  -ms-transition: 0.3s ease-out;
+  -o-transition: 0.3s ease-out;
+}
+
+a:hover {
+  color: var(--light-blue);
+}
+/*
+p {
+  font-size: 18px;
+  font-size: 1.8rem;
+}
+*/
+
 .page-title {
   margin-bottom: 20px;
+  margin-bottom: 2.8vh;
   font-size: 70px;
   font-family: "Comfortaa", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
   letter-spacing: -0.2rem;
   color: #102C57;
 }
 
+.page-title.sub-page {
+  font-size: 40px;
+  font-weight: 600;
+}
+
 .row {
-  padding: 5% 10%;
+  padding: 5% 12%;
   border-bottom: #dddddd solid 1px;
   box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
+}
+
+.center {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  text-align: center;
 }
 
 .row.second {
@@ -71,20 +103,52 @@ body {
   text-align: center;
 }
 
-.sub-title {
-  font-family: "Comfortaa", sans-serif;
-  margin-bottom: 25px;
+.section-header {
+  font-size: 25px;
+  font-weight: 500;
+  color: #102C57
 }
 
+.sub-title {
+  font-size: 30px;
+  font-family: "Comfortaa", sans-serif;
+}
+
+/* ----------------------- Transition between Pages --------------------------------- */
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: rotateX(-10deg);
+    -webkit-transform: rotateX(-10deg);
+    -moz-transform: rotateX(-10deg);
+    -ms-transform: rotateX(-10deg);
+    -o-transform: rotateX(-10deg);
+}
+
+  to {
+    opacity: 1;
+    transform: rotateX(0);
+    -webkit-transform: rotateX(0);
+    -moz-transform: rotateX(0);
+    -ms-transform: rotateX(0);
+    -o-transform: rotateX(0);
+  }
+}
+
+main {
+  animation: transitionIn 1s;
+  -webkit-animation: transitionIn 1s;
+}
 
 
 /* -------------------------- CSS for small screen --------------------------- */
 
 /* responsiveness for phone screens */
 @media only screen and (max-width: 600px) {
+  /*
   .page-title {
     font-size: 40px;
-  }
+  }*/
 }
 
 /*------------------------------------*\

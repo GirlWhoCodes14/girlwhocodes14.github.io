@@ -5,6 +5,10 @@
     --msg: #C0F0F7;
 }
 
+#contact .page-title {
+    text-align: center;
+}
+
 .contact-left p {
     margin-top: 30px;
 }
@@ -17,6 +21,8 @@
 
 .social-icons {
     margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .social-icons a {
@@ -33,14 +39,27 @@
     -o-transition: transform 0.5s;
 }
 
+.social-icons a div {
+    text-align: center;
+}
+
 .social-icons a:hover {
-    color: #FEAE6F;
+    color: #102C57;
 
     transform: translateY(-5px);
     -webkit-transform: translateY(-5px);
     -moz-transform: translateY(-5px);
     -ms-transform: translateY(-5px);
     -o-transform: translateY(-5px);
+}
+
+.social-icons a i {
+    font-size: 30px;
+}
+
+.form-section {
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 form {
@@ -61,7 +80,7 @@ form {
 
 .input-form p {
     margin-bottom: 5px;
-    font-size: 15px;
+    font-size: 16px;
     color: var(--blue);
 }
 
