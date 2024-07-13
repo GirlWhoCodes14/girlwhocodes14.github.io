@@ -119,7 +119,7 @@ p {
   padding: 10px 40px;
   font-size: 18px;
   color: white;
-  background-color: var(--dropdown-nav-bgColor);
+  background-color: #0d1a49;
   border: none;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 

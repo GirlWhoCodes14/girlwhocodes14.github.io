@@ -92,3 +92,16 @@
     color: white;
     margin-left: 10px;
 }
+
+
+
+
+@media only screen and (max-width : 480px) {
+    .paragraph {
+        margin: 20px 0;
+    }
+
+    .lists {
+        padding-left: 15px;
+    }
+}

@@ -114,12 +114,12 @@ main img {
 }
 
 .media-container .portrait {
-    width: 30rem;
+    width: 20rem;
     aspect-ratio: 2/3;
 }
 
 .media-container .landscape {
-    height: 35rem;
+    height: 25rem;
     width: auto;
     aspect-ratio: 3/2;
 }

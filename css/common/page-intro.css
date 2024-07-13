@@ -104,6 +104,24 @@
 }
 
 @media only screen and (max-width: 600px) {
+    .page-intro {
+        padding: 4% 5%;
+    }
+
+    .page-intro.sub-page {
+        padding: 5%;
+        gap: 20px;
+    }
+    .intro-img-col
+    {
+        width: auto;
+        height: auto;
+    }
+
+    .intro-img-col img, .intro-img-col iframe {
+        min-width: 150px;
+        width: 100%;
+    }
 
     /*
     .intro-txt-col .caption, .intro-txt-col p {
