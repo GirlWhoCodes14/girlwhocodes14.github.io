@@ -16,11 +16,60 @@
 
   <!-- to compile the html files -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Header/Footer ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <!-- CSS -->
+    <link href="../css/common/header.css" rel="stylesheet" type="text/css" />
+    <link href="../css/common/footer.css" rel="stylesheet" type="text/css" />
+
+    <!-- Javascript -->
+    <script defer src="../javascript/common/header.js"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Quicksand:wght@300..700&family=Varela+Round&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome: Icons -->
+    <script src="https://kit.fontawesome.com/5e4a65d337.js" crossorigin="anonymous"></script>
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ END: Header/Footer ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 </head>
 
 <body>
-  <!-- Header -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Header ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <header>
+    <!-- Alexis' Logo -->
+    <a class="my-logo" href="../index.html"><img src="../images/alexis_logo.png" alt="Alexis Ayuso's logo">.</a>
+    <nav>
+      <!-- Navigation Bar-->
+      <ul id="header-nav">
+        <li><a href="../index.html" class="nav-link">Home</a></li>
+        <li><a href="../about.html" class="nav-link">About</a></li>
+        <!--<li><a href="services.html" class="nav-link">Services</a></li>-->
+        <li><a href="../portfolio.html" class="nav-link">Portfolio</a></li>
+        <li><a href="../contact.html" class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- hamburger icon or exit icon -->
+      <div class="menu-toggle"><i class="fa-solid fa-bars"></i></div>
+    </nav>
+
+    <!-- Dropdown Navigation -->
+    <div id="dropdown-nav">
+      <ul>
+        <li><a href="../index.html" class="nav-link">Home</a></li><hr>
+        <li><a href="../about.html" class="nav-link">About</a></li><hr>
+        <!--<li><a href="services.html" class="nav-link">Services</a></li><hr>-->
+        <li><a href="../portfolio.html" class="nav-link">Portfolio</a></li><hr>
+        <li><a href="../contact.html" class="nav-link">Contact</a></li><hr>
+      </ul>
+    </div>
+  </header>
+  <!--
   <div id="header-container"></div>
+  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ END: Header ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
 
   <main>
     <!-- Introduction of Supreme Court of Belize -->
@@ -96,11 +145,30 @@
     </div>
   </main>
 
-  <!-- Footer -->
+
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Footer ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <footer>
+    <p>&copy; 2024 Alexis Ayuso</p>
+
+    <nav>
+      <ul>
+        <li><a href="../index.html" class="nav-link footer-nav">Home</a></li>
+        <li><a href="../about.html" class="nav-link footer-nav">About</a></li>
+        <!--<li><a href="services.html" class="nav-link footer-nav">Services</a></li>-->
+        <li><a href="../portfolio.html" class="nav-link footer-nav">Portfolio</a></li>
+        <li><a href="../contact.html" class="nav-link footer-nav">Contact</a></li>
+      </ul>
+    </nav>
+  </footer>
+  <!--
   <div id="footer-container"></div>
+  -->
 
   <!-- Javascript -->
+  <!--
   <script src="../javascript/common/subpage-add-header.js"></script>
+  -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~ END: Footer ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 </body>
 
 </html>
