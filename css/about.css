@@ -149,3 +149,12 @@
         width: 100%;
     }
 }
+
+@media only screen and (max-width: 600px) {
+    #skills .section {
+        justify-content: left;
+    }
+    .skill img {
+        height: 30px;
+    }
+}
