@@ -116,6 +116,16 @@ p {
   font-family: "Comfortaa", sans-serif;
 }
 
+.paragraph {
+  margin: 25px 8%;
+}
+
+.paragraph p {
+  margin-top: 20px;
+  line-height: 1.8;
+  text-align: justify;
+}
+
 .btn {
   cursor: pointer;
   padding: 10px 40px;
@@ -201,6 +211,13 @@ main {
 @media only screen and (max-width: 767px) {
 
 }
+
+@media only screen and (max-width: 600px) {
+  .paragraph {
+    margin: 20px 0;
+  }
+}
+
 
 /*------------------------------------*\
     $IPHONE 4S LANDSCAPE

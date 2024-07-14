@@ -7,16 +7,6 @@
     margin: 25px 0;
 }
 
-.paragraph {
-    margin: 25px 8%;
-}
-
-.paragraph p {
-    margin-top: 20px;
-    line-height: 1.8;
-    text-align: justify;
-}
-
 .sub-section {
     margin: 20px 0;
 }
@@ -96,12 +86,20 @@
 
 
 
-@media only screen and (max-width : 480px) {
-    .paragraph {
-        margin: 20px 0;
+@media only screen and (max-width : 600px) {
+    .demo-video iframe {
+        width: 100%;
     }
 
     .lists {
         padding-left: 15px;
+    }
+
+    .full-img {
+        max-width: 100%;
+    }
+
+    .med-img {
+        max-width: 100%
     }
 }

@@ -74,6 +74,13 @@ form {
     max-width: 100%;
 }
 
+form .form-error-text {
+    font-size: 14.5px;
+    color: #1679AB;
+    text-align: left;
+    display: none;
+}
+
 .input-form {
     margin: 16px 0;
 }

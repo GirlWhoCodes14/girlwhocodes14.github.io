@@ -14,9 +14,6 @@
     <link href="css/common/page-intro.css" rel="stylesheet" type="text/css" />
     <link href="css/contact.css" rel="stylesheet" type="text/css" />
 
-    <!-- to compile the html files -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Header/Footer ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     <!-- CSS -->
     <link href="css/common/header.css" rel="stylesheet" type="text/css" />
@@ -110,22 +107,25 @@
         <div class="row second">
             <h1 class="sub-title">Send me an email</h1>
             <div class="form-section">
-                <form name="submit-to-google-sheet" action="">
-                    <div class="form-col-1"> 
+                <form name="submit-to-google-sheet" action="#">
+                    <div class="form-col-1">
                         <div class="input-form">
                             <p>Name</p>
-                            <input type="text" name="Name" placeholder="" required>
+                            <input id="name" type="text" name="Name" placeholder="">
+                            <div class="form-error-text">Name cannot be blank!</div>
                         </div>
 
                         <div class="input-form">
                             <p>Email</p>
-                            <input type="email" name="Email" id="" placeholder="" required>
+                            <input id="email" type="email" name="Email" placeholder="">
+                            <div class="form-error-text">Email address cannot be blank!</div>
                         </div>
                     </div>
 
                     <div class="form-col-2 input-form">
                         <p>Message</p>
-                        <textarea name="Message" id="" rows="5" placeholder=""></textarea>
+                        <textarea id="message" name="Message" rows="5" placeholder=""></textarea>
+                        <div class="form-error-text">Message cannot be blank!</div>
                     </div>
                 </form>
 
@@ -159,6 +159,12 @@
     <!-- Javascript -->
     <script src="javascript/common/script.js"></script>
     <script src="javascript/contact-message.js"></script>
+
+    <!-- Receive Form Data on Email-->
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 </body>
 
 </html>
