@@ -161,12 +161,12 @@ p {
 /* ----------------------- Transition between Pages --------------------------------- */
 @keyframes transitionIn {
   from {
-    opacity: 0;
-    transform: rotateX(-10deg);
-    -webkit-transform: rotateX(-10deg);
-    -moz-transform: rotateX(-10deg);
-    -ms-transform: rotateX(-10deg);
-    -o-transform: rotateX(-10deg);
+    opacity: 0.5;
+    transform: rotateX(-15deg);
+    -webkit-transform: rotateX(-15deg);
+    -moz-transform: rotateX(-15deg);
+    -ms-transform: rotateX(-15deg);
+    -o-transform: rotateX(-15deg);
 }
 
   to {
@@ -180,8 +180,8 @@ p {
 }
 
 main {
-  animation: transitionIn 1s;
-  -webkit-animation: transitionIn 1s;
+  animation: transitionIn 4s;
+  -webkit-animation: transitionIn 4s;
 }
 
 

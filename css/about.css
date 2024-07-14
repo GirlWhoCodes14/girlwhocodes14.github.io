@@ -11,7 +11,7 @@
 
 .skill-group {
     display: inline-block;
-    padding: 10px 10px 0px 10px;
+    padding: 8px 8px 0px 8px;
     justify-content: center;
     background-color: white;
     border: 1px solid #9AC8CD;
@@ -24,9 +24,14 @@
     -o-border-radius: 10px;
 }
 
-.skill-group h4 {
+.skill-group h5 {
     text-wrap: pretty;
     color: #0E46A3;
+    font-size: 13px;
+}
+
+.skill-group p {
+    font-size: 15px;
 }
 
 .skills {
@@ -36,7 +41,7 @@
 }
 
 .skill {
-    margin: 10px;
+    margin: 6px;
     margin-bottom: 5px;
     text-align: center;
 }
