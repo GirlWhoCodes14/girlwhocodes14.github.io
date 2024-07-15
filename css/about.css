@@ -136,15 +136,9 @@
 }
 
 
-/* ------------ EXPERIENCE ------------- */
-#experience {
-    display: none;
-}
 
 
-/* responsiveness */
-
-
+/* ------------------- responsiveness -------------------------- */
 @media only screen and (max-width: 1024px) {
     #skills .section {
         justify-content: space-evenly;
@@ -159,6 +153,7 @@
     #skills .section {
         justify-content: left;
     }
+
     .skill img {
         height: 30px;
     }
