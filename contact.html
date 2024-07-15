@@ -105,36 +105,32 @@
         </div>
 
         <div class="row second">
-            <!-- <h1 class="sub-title">Send me an email</h1> -->
-            <h1 class="sub-title">Send me a message</h1>
+            <h1 class="sub-title">Send me an email.</h1>
             <div class="form-section">
-                <form name="submit-to-google-sheet" action="#">
+                <form name="message-form" onsubmit="sendEmail();" action="#">
                     <div class="form-col-1">
                         <div class="input-form">
-                            <p>Name</p>
-                            <input id="name" type="text" name="Name" placeholder="">
-                            <div class="form-error-text">Name cannot be blank!</div>
+                            <label for="name">Name</label>
+                            <input type="text" id="name" placeholder="" autocomplete="name" autocapitalize="on" required>
                         </div>
 
                         <div class="input-form">
-                            <p>Email</p>
-                            <input id="email" type="email" name="Email" placeholder="">
-                            <div class="form-error-text">Email address cannot be blank!</div>
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="" autocomplete="email" required>
                         </div>
                     </div>
 
                     <div class="form-col-2 input-form">
-                        <p>Message</p>
-                        <textarea id="message" name="Message" rows="5" placeholder=""></textarea>
-                        <div class="form-error-text">Message cannot be blank!</div>
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" rows="5" placeholder=""></textarea>
                     </div>
-                </form>
 
-                <div class="submit">
-                    <span id="msg"></span>
-                    <!-- <button type="submit" class="btn">Send email</button> -->
-                    <button type="submit" class="btn">Send message</button>
-                </div>
+                    <div class="btn-with-message">
+                        <div id="confirm-msg"></div>
+                        <div class="btn-container"><button type="submit" id="submit" class="btn">Send Email</button></div>
+                    </div>
+
+                </form>
             </div>
         </div>
     </main>
@@ -162,10 +158,10 @@
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~ Javascript ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     <script src="javascript/contact-message.js"></script>
 
-    <!-- Receive Form Data on Email-->
+    <!-- receive form data in email-->
     <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <!-- custom confirmation notification -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
 </body>
 
 </html>

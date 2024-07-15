@@ -2,7 +2,6 @@
     --dropdown-nav-bgColor: #0d1a49;
     --blue: #102C57;
     --light-blue: #1679AB;
-    --msg: #C0F0F7;
 }
 
 #contact .page-title {
@@ -85,7 +84,7 @@ form .form-error-text {
     margin: 16px 0;
 }
 
-.input-form p {
+.input-form label {
     margin-bottom: 5px;
     font-size: 16px;
     color: var(--blue);
@@ -105,16 +104,22 @@ form input, form textarea {
     -o-border-radius: 4px;
 }
 
-.submit {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.btn-with-message {
+    width: 100%;
 }
 
-#msg {
-    color: var(--msg);
-    margin-top: -40px;
-    display: block;
+.btn-container {
+    width: 100%;
+    text-align: center;
+}
+
+#confirm-msg {
+    margin-top: -10px;
+    padding-left: 10px;
+    color: #1679AB;
+    font-size: 14px;
+    text-align: left;
+    height: 25px;
 }
 
 @media only screen and (max-width: 975px) {
