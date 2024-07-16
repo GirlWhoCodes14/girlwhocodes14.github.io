@@ -96,7 +96,7 @@ main img {
 }
 
 .media-container iframe {
-    width: 18em;
+    width: 350px;
     aspect-ratio: 16/9;
 }
 
@@ -145,6 +145,20 @@ main img {
 
     .header-text h1 {
         font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .media-container iframe {
+        width: 300px;
+    }
+
+    .media-container .portrait {
+        width: 16rem;
+    }
+
+    .media-container .landscape {
+        height: 14rem;
     }
 }
 
