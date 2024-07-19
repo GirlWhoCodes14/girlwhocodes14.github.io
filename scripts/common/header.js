@@ -27,3 +27,11 @@ menuToggle.onclick = function() {
   const isOpen = dropdownMenu.classList.contains('open')
   menuToggleIcon.classList = isOpen ? 'fa-solid fa-xmark' : 'fa-solid fa-bars'
 }
+
+
+// ------- prevent viewers from right clicking and download images ------
+document.addEventListener('contextmenu', event => {
+  if (event.target.matches('img')) {
+    event.preventDefault();
+  }
+});
