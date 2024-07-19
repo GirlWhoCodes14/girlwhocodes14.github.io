@@ -1,5 +1,5 @@
 const form = document.forms['message-form']
-const msg = document.getElementById("confirm-msg")
+const msg = document.getElementById('js-confirm-msg')
 
 form.addEventListener('submit', e => {
     e.preventDefault()

@@ -9,15 +9,14 @@
   <title>Alexis Ayuso | Software Engineer</title>
   <meta name="description" content="Handcrafted portfolio website of Alexis Ayuso">
   <meta name="keywords" content="Alexis Ayuso, Belize">
+  <meta name="author" content="Alexis Ayuso">
 
   <meta property="type" content="website"/>
-  <!--
-  <meta property="og:url" content="https://alexisayuso.com"/>
-  -->
+  <meta property="og:url" content="https://girlwhocodes14.github.io/"/>
 
   <!-- CSS -->
-  <link href="css/common/style.css" rel="stylesheet" type="text/css" />
-  <link href="css/home.css" rel="stylesheet" type="text/css" />
+  <link href="styles/common/style.css" rel="stylesheet" type="text/css" />
+  <link href="styles/home.css" rel="stylesheet" type="text/css" />
 
   <!-- to compile the html files -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -25,11 +24,11 @@
 
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Header/Footer ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <!-- CSS -->
-  <link href="css/common/header.css" rel="stylesheet" type="text/css" />
-  <link href="css/common/footer.css" rel="stylesheet" type="text/css" />
+  <link href="styles/common/header.css" rel="stylesheet" type="text/css" />
+  <link href="styles/common/footer.css" rel="stylesheet" type="text/css" />
 
   <!-- Javascript -->
-  <script defer src="javascript/common/header.js"></script>
+  <script defer src="scripts/common/header.js"></script>
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -90,7 +89,7 @@
 
       <div class="main-scroll">
         <!-- Scroll Left Button -->
-        <div class="icon" onclick="video_scroll_left()"><i class="fa-solid fa-chevron-left"></i></div>
+        <div class="icon js-left-scroll-video"><i class="fa-solid fa-chevron-left"></i></div>
         <!-- Overlay of Media Scroll -->
         <div id="cover-media" class="cover">
           <!-- Media Scroll -->
@@ -133,7 +132,7 @@
         </div>
 
         <!-- Scroll Right Button -->
-        <div class="icon" onclick="video_scroll_right()"><i class="fa-solid fa-chevron-right"></i></div>
+        <div class="icon js-right-scroll-video"><i class="fa-solid fa-chevron-right"></i></div>
       </div>
     </div>
 
@@ -144,7 +143,7 @@
 
       <div class="main-scroll">
         <!-- Scroll Left Button -->
-        <div class="icon" onclick="accomplishments_scroll_left()"><i class="fa-solid fa-chevron-left"></i></div>
+        <div class="icon js-left-scroll-awards"><i class="fa-solid fa-chevron-left"></i></div>
 
         <!-- Overlay of Media Scroll -->
         <div id="accomplishement-cover" class="cover">
@@ -173,7 +172,7 @@
         </div>
 
         <!-- Scroll Right Button -->
-        <div class="icon" onclick="accomplishments_scroll_right()"><i class="fa-solid fa-chevron-right"></i></div>
+        <div class="icon js-right-scroll-awards"><i class="fa-solid fa-chevron-right"></i></div>
       </div>
     </div>
 
@@ -201,7 +200,7 @@
 
 
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~ Javascript ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-  <script src="javascript/home.js"></script>
+  <script src="scripts/home.js"></script>
 </body>
 
 </html>

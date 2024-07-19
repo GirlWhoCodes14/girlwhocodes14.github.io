@@ -113,7 +113,7 @@ form input, form textarea {
     text-align: center;
 }
 
-#confirm-msg {
+.form-msg {
     margin-top: -10px;
     padding-left: 10px;
     color: #1679AB;

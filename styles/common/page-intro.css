@@ -96,6 +96,10 @@
         width: calc(30vw + 25vh);
         height: calc(30vw + 25vh);
     }
+
+    .intro-txt-col .caption, .intro-txt-col p {
+        font-size: 18px;
+    }
     /*
     .intro-txt-col .caption, .intro-txt-col p {
         font-size: 17px;
