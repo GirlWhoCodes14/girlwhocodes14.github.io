@@ -24,6 +24,7 @@ main img {
 
 .full.row {
     padding: 5% 5%;
+    padding: 5% 5vw;
 }
 
 /* Video scroll bar */
@@ -43,6 +44,7 @@ main img {
     padding: 0 5px;
     cursor: pointer;
     width: 5%;
+    width: 4vw;
 }
 
 .icon i {
@@ -77,8 +79,8 @@ main img {
     display: flex;
     justify-content: left;
     align-items: center;
-    overflow: auto;
     position: relative;
+    overflow: auto;
     scroll-behavior: smooth;
     white-space: nowrap;
     gap: 0 10px;
@@ -96,7 +98,7 @@ main img {
 }
 
 .media-container iframe {
-    width: 350px;
+    width: 390px;
     aspect-ratio: 16/9;
 }
 
@@ -112,11 +114,15 @@ main img {
 }
 
 
-/*responsiveness*/
+/* responsiveness */
 
 @media only screen and (max-width: 850px) {
     .banner {
         padding: 0;
+    }
+
+    .media-container iframe {
+        width: 350px;
     }
 }
 
@@ -148,42 +154,27 @@ main img {
     }
 }
 
-@media only screen and (max-width: 480px){
-    .media-container iframe {
-        width: 300px;
+@media only screen and (max-width: 550px){
+    .scroll-media {
+        overflow: hidden;
+        width: 100%;
+        gap: 0;
+        padding: 10px 0;
     }
 
+    .media-container {
+        width: 100%;
+    }
+
+    .media-container iframe,
     .media-container .portrait {
-        width: 16rem;
+        width: 80vw;
     }
 
     .media-container .landscape {
-        height: 14rem;
+        height: 15rem;
     }
 }
 
-
-
-/*
-.scroll-media::-webkit-scrollbar-track {
-    color: #ddd;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
+@media only screen and (max-width: 500px){
 }
-
-.scroll-media::-webkit-scrollbar-thumb {
-    background: #9AC8CD;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-}
-
-.scroll-media::-webkit-scrollbar-thumb:hover {
-    background: gray;
-}
-*/
