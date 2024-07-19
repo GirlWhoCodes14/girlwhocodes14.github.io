@@ -164,10 +164,7 @@ main img {
     }
 
     .scroll-media,
-    .media-container,
-    .media-container iframe,
-    .media-container .portrait
-    .media-container .landscape {
+    .media-container {
         width: 100%;
     }
 }
