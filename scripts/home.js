@@ -40,11 +40,7 @@ videos.forEach(video => {
   `;
 })
 
-document.querySelector('.scroll-media').innerHTML = videosHTML;
-
-
-
-
+document.querySelector('#video-scroller').innerHTML = videosHTML;
 
 /* scroll through videos */
 const leftScrollVideo = document.querySelector('.js-left-scroll-video')
@@ -60,8 +56,45 @@ rightScrollVideo.addEventListener("click", () => {
   right.scrollBy(300, 0);
 })
 
+// generate accomplishments
+const awards = [
+  {
+    src: "County Magistrate Award.jpg",
+    alt: "Alexis' County Magistrate Award for Ranking 3rd in Graduating Class",
+    orientation: "portrait"
+  },
+  {
+    src: "112 CSIE Undergrad Award-zh.jpg",
+    alt: "Alexis and Zenroy's First Place Award for 112 CSIE Undergraduate Project (Chinese Version)",
+    orientation: "portrait"
+  },
+  {
+    src: "112 CSIE Undergrad Award-en.jpg",
+    alt: "Alexis and Zenroy's First Place Award for 112 CSIE Undergraduate Project (English Version)",
+    orientation: "portrait"
+  },
+  {
+    src: "ICDF Outstanding Academic Performance Award.jpg",
+    alt: "Alexis' ICDF Outstanding Academic Performance",
+    orientation: "landscape"
+  }
+]
 
-/* scroll through accomplishments */
+let awardsHTML = '';
+
+awards.forEach(award => {
+  awardsHTML += `
+  <div class="media-container">
+    <img class="${award.orientation}" src="images/accomplishments/${award.src}" alt="${award.alt}">
+  </div>
+  `;
+})
+
+document.querySelector('#accomplishments-scroller').innerHTML = awardsHTML;
+
+
+
+/* --------------- scroll through accomplishments ----------------- */
 const leftScrollAwards = document.querySelector('.js-left-scroll-awards')
 const rightScrollAwards = document.querySelector('.js-right-scroll-awards')
 
