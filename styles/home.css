@@ -89,7 +89,7 @@ main img {
 }
 
 .scroll-media::-webkit-scrollbar {
-    display: none;
+    /*display: none;*/
     height: 5px;
 }
 
@@ -174,7 +174,6 @@ main img {
     }
 
     .scroll-media {
-        overflow: hidden;
         width: 100%;
         gap: 0;
         padding: 10px 0;

@@ -55,15 +55,12 @@ window.addEventListener("resize", () => {
     const coverWidth = document.querySelector('.cover').offsetWidth;
     document.querySelectorAll(".media-container iframe").forEach(video => {
       video.style.width = coverWidth + "px";
-      console.log(video.style.width);
     });
     document.querySelectorAll(".media-container .portrait").forEach(award => {
       award.style.width = coverWidth + "px";
-      console.log(award.style.width);
     });
     document.querySelectorAll(".media-container .landscape").forEach(award => {
       award.style.height = coverWidth + "px";
-      console.log(award.style.height);
     });
   }
 });
