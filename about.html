@@ -1,300 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Alexis Ayuso</title>
+    <meta name="description" content="Learn about Alexis Ayuso">
+    <meta name="author" content="Alexis Ayuso">
 
-  <title>About Alexis Ayuso | Software Engineer</title>
-  <meta name="description" content="Learn about Alexis Ayuso">
-  <meta name="author" content="Alexis Ayuso">
+    <link href="styles/common/page-intro.css" rel="stylesheet" type="text/css" />
+    <link href="styles/about.css" rel="stylesheet" type="text/css" />
 
-  <!-- CSS -->
-  <link href="styles/common/style.css" rel="stylesheet" type="text/css" />
-  <link href="styles/common/page-intro.css" rel="stylesheet" type="text/css" />
-  <link href="styles/about.css" rel="stylesheet" type="text/css" />
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Common Head ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <!-- CSS -->
+    <link href="styles/common/header.css" rel="stylesheet" type="text/css" />
+    <link href="styles/common/footer.css" rel="stylesheet" type="text/css" />
+    <link href="styles/common/style.css" rel="stylesheet" type="text/css" />
 
-  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Header/Footer ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-  <!-- CSS -->
-  <link href="styles/common/header.css" rel="stylesheet" type="text/css" />
-  <link href="styles/common/footer.css" rel="stylesheet" type="text/css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Quicksand:wght@300..700&family=Varela+Round&display=swap" rel="stylesheet">
 
-  <!-- Javascript -->
-  <script defer src="scripts/common/header.js"></script>
+    <!-- Font Awesome: Icons -->
+    <script src="https://kit.fontawesome.com/5e4a65d337.js" crossorigin="anonymous"></script>
+  </head>
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Quicksand:wght@300..700&family=Varela+Round&display=swap" rel="stylesheet">
+  <body>
+    <header></header>
 
-  <!-- Font Awesome: Icons -->
-  <script src="https://kit.fontawesome.com/5e4a65d337.js" crossorigin="anonymous"></script>
-  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ END: Header/Footer ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-</head>
-
-<body>
-  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Header ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-  <header>
-    <!-- Alexis' Logo -->
-    <a class="my-logo" href="/"><img src="images/alexis_logo.png" alt="Alexis Ayuso's logo">.</a>
-    <nav>
-      <!-- Navigation Bar-->
-      <ul id="header-nav">
-        <li><a href="/" class="nav-link">Home</a></li>
-        <li><a href="about.html" class="nav-link">About</a></li>
-        <!--<li><a href="services.html" class="nav-link">Services</a></li>-->
-        <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
-        <li><a href="contact.html" class="nav-link">Contact</a></li>
-      </ul>
-
-      <!-- hamburger icon or exit icon -->
-      <div class="menu-toggle"><i class="fa-solid fa-bars"></i></div>
-    </nav>
-
-    <!-- Dropdown Navigation -->
-    <div id="dropdown-nav">
-      <ul>
-        <li><a href="/" class="nav-link">Home</a></li><hr>
-        <li><a href="about.html" class="nav-link">About</a></li><hr>
-        <!--<li><a href="services.html" class="nav-link">Services</a></li><hr>-->
-        <li><a href="portfolio.html" class="nav-link">Portfolio</a></li><hr>
-        <li><a href="contact.html" class="nav-link">Contact</a></li><hr>
-      </ul>
-    </div>
-  </header>
-  <!--
-  <div id="header-container"></div>
-  -->
-  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ END: Header ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-
-
-  <main>
-    <div class="row page-intro">
-      <!-- Profile Image -->
-      <div class="intro-img-col">
-        <img src="images/alexis_graduation_hd_crop.png" alt="Alexis Ayuso">
-      </div>
-
-      <!-- About Me -->
-      <div class="intro-txt-col">
-        <h1 class="page-title">about.</h1>
-        <p class="caption">Born and raised in Belize City, Belize.<br>Living in Taiwan.</p>
-        <p>I have a remarkable history of high academic performance from primary school to university. 
-          I am energetic, detail-oriented, and committed to learning and further developing expertise. 
-          I aim to leverage and expand my skills to contribute positively to your establishment.
-        </p>
-      </div>
-    </div>
-
-    <div id="skills" class="row second">
-      <div class="paragraph">
-        <h1 class="section-header">Skills</h1>
-        <p>I'm open to job opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills or can expand them, then don't hesitate to contact me.</p>
-      </div>
-
-      <div class="section">
-        <div class="skill-group">
-          <h5>Programming</h5>
-          <div class="skills">
-            <div class="skill">
-              <img src="images/skills/C++_logo.png" alt="C++ logo">
-              <p>C/C++</p>
-            </div>
-
-            <div class="skill">
-              <img src="images/skills/Python_logo.png" alt="Python logo">
-              <p>Python</p>
-            </div>
-          </div>
+    <main>
+      <div class="row page-intro">
+        <!-- Profile Image -->
+        <div class="intro-img-col">
+          <img src="images/alexis_graduation_hd_crop.png" alt="Alexis Ayuso">
         </div>
 
-        <div class="skill-group">
-          <h5>APP Development</h5>
-          <div class="skills">
-            <div class="skill">
-              <img src="images/skills/swiftui_logo.png" alt="SwiftUI logo">
-              <p>SwiftUI</p>
-            </div>
-
-            <div class="skill">
-              <img src="images/skills/Kotlin_logo.jpg" alt="Kotlin logo">
-              <p>Kotlin</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="skill-group">
-          <h5>Web Development</h5>
-          <div class="skills">
-            <div class="skill">
-              <img src="images/skills/HTML_logo.png" alt="HTML logo">
-              <p>HTML</p>
-            </div>
-
-            <div class="skill">
-              <img src="images/skills/CSS3_logo.png" alt="CSS3 logo">
-              <p>CSS</p>
-            </div>
-
-            <div class="skill">
-              <img src="images/skills/javascript_logo.png" alt="Javascript logo">
-              <p>Javascript</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="skill-group">
-          <h5>NoSQL</h5>
-          <div class="skills">
-            <div class="skill">
-              <img src="images/skills/MongoDB_logo.png" alt="MongoDB logo">
-              <p>MongoDB</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="skill-group">
-          <h5>3D Design</h5>
-          <div class="skills">
-            <div class="skill">
-              <img src="images/skills/sketchup_logo.png" alt="SketchUp logo">
-              <p>SketchUp</p>
-            </div>
-
-            <div class="skill">
-              <img src="images/skills/Unity_logo.png" alt="Unity logo">
-              <p>Unity</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="skill-group">
-          <h5>Version Control</h5>
-          <div class="skills">
-            <div class="skill">
-              <img src="images/skills/git_logo.png" alt="Git logo">
-              <p>Git</p>
-            </div>
-
-            <div class="skill">
-              <img src="images/skills/github_logo.jpg" alt="GitHub logo">
-              <p>GitHub</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="skill-group">
-          <h5>Microsoft Office</h5>
-          <div class="skills">
-            <div class="skill">
-              <img src="images/skills/Microsoft_Office_Word_logo.png" alt="Microsoft Word logo">
-              <p>Word</p>
-            </div>
-            <div class="skill">
-              <img src="images/skills/Microsoft_Office_PowerPoint_logo.png" alt="Microsoft PowerPoint logo">
-              <p>PowerPoint</p>
-            </div>
-            <div class="skill">
-              <img src="images/skills/Microsoft_Office_Excel_logo.png" alt="Microsoft Excel logo">
-              <p>Excel</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="skill-group">
-          <h5>Video Editing</h5>
-          <div class="skills">
-            <div class="skill">
-              <img src="images/skills/Microsoft_Clipchamp_logo.png" alt="Clipchamp logo">
-              <p>Clipchamp</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="skill-group">
-          <h5>Familiarity with (kinda)</h5>
-          <div class="skills">
-            <div class="skill">
-              <img src="images/skills/Java_logo.png" alt="Java logo">
-              <p>Java</p>
-            </div>
-
-            <div class="skill">
-              <img src="images/skills/Flutter_logo.png" alt="Flutter logo">
-              <p>Flutter</p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-    <div id="education" class="row">
-      <div class="paragraph">
-        <h1 class="section-header">Education</h1>
-      </div>
-
-      <div class="section">
-        <div class="school">
-          <div class="school-logo">
-            <a href="https://www.ndhu.edu.tw/" target="_blank"><img src="images/education/ndhu_logo.png" alt="NDHU logo"></a>
-          </div>
-          <div class="school-details">
-            <h4>2020 - 2024</h4>
-            <h3>National Dong Hwa University</h3>
-            <p class="degree">Bachelor Degree in Computer Science and Information Engineering</p>
-            <p class="program">Program of Multimedia and Intelligent Computing</p>
-          </div>
-        </div>
-
-        <div class="school">
-          <div class="school-logo">
-            <a href="https://www.sjc.edu.bz/juniorcollege" target="_blank"><img src="images/education/sjc_logo.jpg" alt="SJC logo"></a>
-          </div>
-          <div class="school-details">
-            <h4>2018 - 2020</h4>
-            <h3>Saint John's College Junior College</h3>
-            <p class="degree">Associate Degree in Computer Science</p>
-          </div>
-        </div>
-
-        <div class="school">
-          <div class="school-logo">
-            <a href="https://www.sca.edu.bz/" target="_blank"><img src="images/education/sca_logo.png" alt="SCA logo"></a>
-          </div>
-          <div class="school-details">
-            <h4>2014 - 2018</h4>
-            <h3>Saint Catherine Academy</h3>
-            <p class="degree">Diploma in Academic Science</p>
-          </div>
+        <!-- About Me -->
+        <div class="intro-txt-col">
+          <h1 class="page-title">about.</h1>
+          <p class="caption">Born and raised in Belize City, Belize.<br>Living in Taiwan.</p>
+          <p>I have a remarkable history of high academic performance from primary school to university. 
+            I am energetic, detail-oriented, and committed to learning and further developing expertise. 
+            I aim to leverage and expand my skills to contribute positively to your establishment.
+          </p>
         </div>
       </div>
-    </div>
-  </main>
 
+      <div id="skills" class="row second">
+        <div class="paragraph">
+          <h1 class="section-header">Skills</h1>
+          <p>I'm open to job opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills or can expand them, then don't hesitate to contact me.</p>
+        </div>
 
-  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Footer ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-  <footer>
-    <p>&copy; 2024 Alexis Ayuso</p>
+        <div id="skills-list" class="section">
+        </div>
+      </div>
 
-    <nav>
-      <ul>
-        <li><a href="index.html" class="nav-link footer-nav">Home</a></li>
-        <li><a href="about.html" class="nav-link footer-nav">About</a></li>
-        <!--<li><a href="services.html" class="nav-link footer-nav">Services</a></li>-->
-        <li><a href="portfolio.html" class="nav-link footer-nav">Portfolio</a></li>
-        <li><a href="contact.html" class="nav-link footer-nav">Contact</a></li>
-      </ul>
-    </nav>
-  </footer>
-  <!--
-  <div id="footer-container"></div>
-  -->
-  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~ END: Footer ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+      <div id="education" class="row">
+        <div class="paragraph">
+          <h1 class="section-header">Education</h1>
+        </div>
 
-  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~ Javascript ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-  <script src="scripts/about.js"></script>
-</body>
+        <div id="schools-list" class="section">
+        </div>
+      </div>
+    </main>
 
+    <footer></footer>
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~ Javascript ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <script src="scripts/common/generate-header-footer.js"></script>
+    <script src="scripts/common/header.js"></script>
+
+    <script src="scripts/about.js"></script>
+  </body>
 </html>

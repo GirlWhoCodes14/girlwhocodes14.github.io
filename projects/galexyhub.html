@@ -1,183 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GaLexy Hub | Alexis Ayuso</title>
+    <meta name="description" content="Learn about GaLexy Hub (iOS APP) by Alexis Ayuso">
 
-  <title>GaLexy Hub | Alexis Ayuso</title>
-  <meta name="description" content="Learn about GaLexy Hub (iOS APP) by Alexis Ayuso">
+    <link href="../styles/common/page-intro.css" rel="stylesheet" type="text/css" />
+    <link href="../styles/projects.css" rel="stylesheet" type="text/css" />
 
-  <!-- CSS -->
-  <link href="../styles/common/style.css" rel="stylesheet" type="text/css" />
-  <link href="../styles/common/page-intro.css" rel="stylesheet" type="text/css" />
-  <link href="../styles/projects.css" rel="stylesheet" type="text/css" />
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Common Head ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <!-- CSS -->
+    <link href="../styles/common/header.css" rel="stylesheet" type="text/css" />
+    <link href="../styles/common/footer.css" rel="stylesheet" type="text/css" />
+    <link href="../styles/common/style.css" rel="stylesheet" type="text/css" />
 
-  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Header/Footer ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-  <!-- CSS -->
-  <link href="../styles/common/header.css" rel="stylesheet" type="text/css" />
-  <link href="../styles/common/footer.css" rel="stylesheet" type="text/css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Quicksand:wght@300..700&family=Varela+Round&display=swap" rel="stylesheet">
 
-  <!-- Javascript -->
-  <script defer src="../scripts/common/header.js"></script>
+    <!-- Font Awesome: Icons -->
+    <script src="https://kit.fontawesome.com/5e4a65d337.js" crossorigin="anonymous"></script>
+  </head>
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Quicksand:wght@300..700&family=Varela+Round&display=swap" rel="stylesheet">
+  <body>
+    <header></header>
 
-  <!-- Font Awesome: Icons -->
-  <script src="https://kit.fontawesome.com/5e4a65d337.js" crossorigin="anonymous"></script>
-  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ END: Header/Footer ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-</head>
-
-<body>
-    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Header ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-    <header>
-        <!-- Alexis' Logo -->
-        <a class="my-logo" href="../index.html"><img src="../images/alexis_logo.png" alt="Alexis Ayuso's logo">.</a>
-        <nav>
-          <!-- Navigation Bar-->
-          <ul id="header-nav">
-            <li><a href="../index.html" class="nav-link">Home</a></li>
-            <li><a href="../about.html" class="nav-link">About</a></li>
-            <!--<li><a href="services.html" class="nav-link">Services</a></li>-->
-            <li><a href="../portfolio.html" class="nav-link">Portfolio</a></li>
-            <li><a href="../contact.html" class="nav-link">Contact</a></li>
-          </ul>
-
-          <!-- hamburger icon or exit icon -->
-          <div class="menu-toggle"><i class="fa-solid fa-bars"></i></div>
-        </nav>
-
-        <!-- Dropdown Navigation -->
-        <div id="dropdown-nav">
-          <ul>
-            <li><a href="../index.html" class="nav-link">Home</a></li><hr>
-            <li><a href="../about.html" class="nav-link">About</a></li><hr>
-            <!--<li><a href="services.html" class="nav-link">Services</a></li><hr>-->
-            <li><a href="../portfolio.html" class="nav-link">Portfolio</a></li><hr>
-            <li><a href="../contact.html" class="nav-link">Contact</a></li><hr>
-          </ul>
-        </div>
-    </header>
-    <!--
-    <div id="header-container"></div>
-    -->
-    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ END: Header ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-
-
-  <main>
-    <!-- Introduction: GaLexy Hub -->
-    <div class="row page-intro sub-page">
-        <div class="intro-txt-col">
-            <h1 class="page-title sub-page">GaLexy Hub</h1>
-            <p class="caption">iOS APP</p>
-            <div class="project-skills"><span>SwiftUI</span><span>Xcode</span></div>
-        </div>
-        <div class="intro-img-col">
-            <img src="../images/projects/galexy-hub/galexy-hub-preview.jpg" alt="GaLexy Hub (Preview)">
-        </div>
-    </div>
-
-    <div class="row second">
-      <div class="paragraph">
-          <h1 class="section-header">Overview</h1>
-
-          <p>GaLexy Hub is an online e-commerce iOS application for the sale of electronic goods.</p>
-          <p>The store sells various electronic devices, including phones, tablets, earbuds, and headphones, watches and televisions. Popular brands like Samsung, Apple and Sony are available on the platform.</p>
+    <main>
+      <!-- Introduction: GaLexy Hub -->
+      <div class="row page-intro sub-page">
+          <div class="intro-txt-col">
+              <h1 class="page-title sub-page">GaLexy Hub</h1>
+              <p class="caption">iOS APP</p>
+              <div class="project-skills"><span>SwiftUI</span><span>Xcode</span></div>
+          </div>
+          <div class="intro-img-col">
+              <img src="../images/projects/galexy-hub/galexy-hub-preview.jpg" alt="GaLexy Hub (Preview)">
+          </div>
       </div>
-    </div>
 
-    <div class="row">
+      <div class="row second">
         <div class="paragraph">
-            <h1 class="section-header">Shop</h1>
-            <p>Shop shows a rotating slide of promotional images at the top. It also shows the various electronic categories such as phones, tablets, watches, etc.</p>
+            <h1 class="section-header">Overview</h1>
+
+            <p>GaLexy Hub is an online e-commerce iOS application for the sale of electronic goods.</p>
+            <p>The store sells various electronic devices, including phones, tablets, earbuds, and headphones, watches and televisions. Popular brands like Samsung, Apple and Sony are available on the platform.</p>
+        </div>
+      </div>
+
+      <div class="row">
+          <div class="paragraph">
+              <h1 class="section-header">Shop</h1>
+              <p>Shop shows a rotating slide of promotional images at the top. It also shows the various electronic categories such as phones, tablets, watches, etc.</p>
+          </div>
+
+          <div class="img-compare">
+              <img src="../images/projects/galexy-hub/Shop.jpg" alt="GaLexy Hub (Shop)">
+              <img src="../images/projects/galexy-hub/Shop2.jpg" alt="GaLexy Hub (Shop #2)">
+              <img src="../images/projects/galexy-hub/Shop3.jpg" alt="GaLexy Hub (Shop #3)">
+          </div>
+      </div>
+
+      <div class="row">
+          <div class="paragraph">
+              <h1 class="section-header">Search</h1>
+              <p>Search the products in the shop by name or use filters to narrow down what you are looking for.</p>
+
+              <div class="sub-section">
+                  <h3>Products can be filtered by:</h3>
+                  <ul class="lists">
+                      <li>Device</li>
+                      <li>Brand</li>
+                      <li>Price Range</li>
+                  </ul>
+              </div>
+          </div>
+
+          <div class="img-compare">
+              <img src="../images/projects/galexy-hub/Search.jpg" alt="GaLexy Hub (Search)">
+              <img src="../images/projects/galexy-hub/Filter Products.jpg " alt="GaLexy Hub (Filter)">
+          </div>
+      </div>
+
+      <div class="row second">
+          <div class="paragraph">
+            <h1 class="section-header">View Product Details</h1>
+            <p>Displays the name, price, image, colors and product details.
+              The product color is chosen by clicking on the thumbnail image of the color, which changes the image and the color name shown.</p>
+          </div>
+          <div class="img-compare">
+              <img src="../images/projects/galexy-hub/View Product Details.jpg" alt="GaLexy Hub (View Product Details)">
+              <img src="../images/projects/galexy-hub/View Product Details (another color).jpg" alt="GaLexy Hub (View Product Details color#3)">
+          </div>
         </div>
 
-        <div class="img-compare">
-            <img src="../images/projects/galexy-hub/Shop.jpg" alt="GaLexy Hub (Shop)">
-            <img src="../images/projects/galexy-hub/Shop2.jpg" alt="GaLexy Hub (Shop #2)">
-            <img src="../images/projects/galexy-hub/Shop3.jpg" alt="GaLexy Hub (Shop #3)">
-        </div>
-    </div>
-
-    <div class="row">
+      <div class="row">
         <div class="paragraph">
-            <h1 class="section-header">Search</h1>
-            <p>Search the products in the shop by name or use filters to narrow down what you are looking for.</p>
-
-            <div class="sub-section">
-                <h3>Products can be filtered by:</h3>
-                <ul class="lists">
-                    <li>Device</li>
-                    <li>Brand</li>
-                    <li>Price Range</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="img-compare">
-            <img src="../images/projects/galexy-hub/Search.jpg" alt="GaLexy Hub (Search)">
-            <img src="../images/projects/galexy-hub/Filter Products.jpg " alt="GaLexy Hub (Filter)">
-        </div>
-    </div>
-
-    <div class="row second">
-        <div class="paragraph">
-          <h1 class="section-header">View Product Details</h1>
-          <p>Displays the name, price, image, colors and product details.
-            The product color is chosen by clicking on the thumbnail image of the color, which changes the image and the color name shown.</p>
+          <h1 class="section-header">Cart</h1>
+          <p>The image on the left is only shown when the cart is empty.</p>
+          <p>After viewing the product details, the product can be added to the cart. The default color will be used if the user does not select a different color.</p>
         </div>
         <div class="img-compare">
-            <img src="../images/projects/galexy-hub/View Product Details.jpg" alt="GaLexy Hub (View Product Details)">
-            <img src="../images/projects/galexy-hub/View Product Details (another color).jpg" alt="GaLexy Hub (View Product Details color#3)">
+            <img src="../images/projects/galexy-hub/Shopping Cart (Empty).jpg" alt="GaLexy Hub Empty Cart">
+            <img src="../images/projects/galexy-hub/Added to Cart.jpg" alt="GaLexy Hub (added to cart)">
+            <img src="../images/projects/galexy-hub/Shopping Cart.jpg" alt="GaLexy Hub Cart">
+        </div>
+        <div class="paragraph">
+          <p>The amount of items in the cart is displayed at the top. The cart shows the important product information. If the product has multiple colors, the specific color chosen is displayed. If multiple colors of the same product are added to the cart, they are shown as separate products.</p>
+          <p>The user can change the amount of a given product of a specific color (if applicable) by clicking the minus (-) or add (+) button. The total cost is tallied at the bottom of the cart.</p>
         </div>
       </div>
+    </main>
 
-    <div class="row">
-      <div class="paragraph">
-        <h1 class="section-header">Cart</h1>
-        <p>The image on the left is only shown when the cart is empty.</p>
-        <p>After viewing the product details, the product can be added to the cart. The default color will be used if the user does not select a different color.</p>
-      </div>
-      <div class="img-compare">
-          <img src="../images/projects/galexy-hub/Shopping Cart (Empty).jpg" alt="GaLexy Hub Empty Cart">
-          <img src="../images/projects/galexy-hub/Added to Cart.jpg" alt="GaLexy Hub (added to cart)">
-          <img src="../images/projects/galexy-hub/Shopping Cart.jpg" alt="GaLexy Hub Cart">
-      </div>
-      <div class="paragraph">
-        <p>The amount of items in the cart is displayed at the top. The cart shows the important product information. If the product has multiple colors, the specific color chosen is displayed. If multiple colors of the same product are added to the cart, they are shown as separate products.</p>
-        <p>The user can change the amount of a given product of a specific color (if applicable) by clicking the minus (-) or add (+) button. The total cost is tallied at the bottom of the cart.</p>
-      </div>
-    </div>
-  </main>
+    <footer></footer>
 
-
-  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Footer ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-  <footer>
-    <p>&copy; 2024 Alexis Ayuso</p>
-
-    <nav>
-      <ul>
-        <li><a href="../index.html" class="nav-link footer-nav">Home</a></li>
-        <li><a href="../about.html" class="nav-link footer-nav">About</a></li>
-        <!--<li><a href="services.html" class="nav-link footer-nav">Services</a></li>-->
-        <li><a href="../portfolio.html" class="nav-link footer-nav">Portfolio</a></li>
-        <li><a href="../contact.html" class="nav-link footer-nav">Contact</a></li>
-      </ul>
-    </nav>
-  </footer>
-  <!--
-  <div id="footer-container"></div>
-  -->
-
-  <!-- Javascript -->
-  <!--
-  <script src="../scripts/common/subpage-add-header.js"></script>
-  -->
-  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~ END: Footer ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-</body>
-
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~ Javascript ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<script src="../scripts/common/generate-header-footer.js"></script>
+		<script src="../scripts/common/header.js"></script>
+  </body>
 </html>
