@@ -4,6 +4,8 @@ const msg = document.getElementById('js-confirm-msg')
 form.addEventListener('submit', e => {
     e.preventDefault()
 
+    sendEmail()
+
     msg.innerHTML = "Your message is sending. Wait a moment."
     setTimeout(function(){
     msg.innerHTML = ""
