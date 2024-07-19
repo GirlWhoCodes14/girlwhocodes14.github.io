@@ -99,39 +99,29 @@ main img {
 }
 
 .media-container iframe {
-    width: 390px;
     aspect-ratio: 16/9;
 }
 
 .media-container .portrait {
-    width: 390px;
     aspect-ratio: 2/3;
 }
 
 .media-container .landscape {
-    width: 390px;
     aspect-ratio: 3/2;
 }
 
 .media-container iframe,
 .media-container .portrait,
 .media-container .landscape {
-    transition: width ease-out;
-    -webkit-transition: width ease-out;
-    -moz-transition: width ease-out;
-    -ms-transition: width ease-out;
-    -o-transition: width ease-out;
-}
-
-
-
-.videos {
-    display: flex;
-    justify-content: space-around;
+    width: 390px;
+    transition: ease-out;
+    -webkit-transition: ease-out;
+    -moz-transition: ease-out;
+    -ms-transition: ease-out;
+    -o-transition: ease-out;
 }
 
 /* responsiveness */
-
 @media only screen and (max-width: 850px) {
     .banner {
         padding: 0;

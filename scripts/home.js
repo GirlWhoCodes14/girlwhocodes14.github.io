@@ -74,9 +74,11 @@ function handleMediaChange(event) {
     const coverWidth = document.querySelector('.cover').offsetWidth;
     document.querySelectorAll(".media-container iframe").forEach(video => {
       video.style.width = coverWidth + "px";
+      console.log("video: ", video.style.width);
     });
     document.querySelectorAll(".media-container .portrait").forEach(award => {
       award.style.width = coverWidth + "px";
+      console.log(".portrait: ", award.style.width);
     });
     document.querySelectorAll(".media-container .landscape").forEach(award => {
       award.style.width = coverWidth + "px";
