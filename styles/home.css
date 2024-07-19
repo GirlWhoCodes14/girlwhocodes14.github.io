@@ -75,6 +75,7 @@ main img {
     -o-border-radius: 4px;
 }
 
+
 .scroll-media {
     display: flex;
     justify-content: left;
@@ -83,7 +84,7 @@ main img {
     overflow: auto;
     scroll-behavior: smooth;
     white-space: nowrap;
-    gap: 0 10px;
+    gap: 10px;
     padding: 10px;
 }
 

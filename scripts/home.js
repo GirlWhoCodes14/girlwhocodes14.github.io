@@ -47,14 +47,19 @@ const leftScrollVideo = document.querySelector('.js-left-scroll-video')
 const rightScrollVideo = document.querySelector('.js-right-scroll-video')
 let videoScroll = document.querySelector("#video-scroller");
 
+// Regex to match one or more digits
+const regex = /\d+/g;
+
 leftScrollVideo.addEventListener("click", () => {
   const width = document.querySelector(".media-container iframe").offsetWidth;
-  videoScroll.scrollBy(width * -1, 0);
+  const padding = Number(window.getComputedStyle(videoScroll).getPropertyValue('padding-left').match(regex));
+  videoScroll.scrollBy((width + padding) * -1, 0);
 })
 
 rightScrollVideo.addEventListener("click", () => {
   const width = document.querySelector(".media-container iframe").offsetWidth;
-  videoScroll.scrollBy(width, 0);
+  const padding = Number(window.getComputedStyle(videoScroll).getPropertyValue('padding-left').match(regex));
+  videoScroll.scrollBy(width + padding, 0);
 })
 
 // generate accomplishments
@@ -101,11 +106,13 @@ const rightScrollAwards = document.querySelector('.js-right-scroll-awards')
 let awardScroll = document.querySelector("#accomplishments-scroller");
 
 leftScrollAwards.addEventListener("click", () => {
-  const width = document.querySelector(".media-container iframe").offsetWidth;
-  awardScroll.scrollBy(width * -1, 0);
+  const width = document.querySelector(".media-container .portrait").offsetWidth;
+  const padding = Number(window.getComputedStyle(awardScroll).getPropertyValue('padding-left').match(regex));
+  awardScroll.scrollBy((width + padding) * -1, 0);
 })
 
 rightScrollAwards.addEventListener("click", () => {
-  const width = document.querySelector(".media-container iframe").offsetWidth;
-  awardScroll.scrollBy(width, 0);
+  const width = document.querySelector(".media-container .portrait").offsetWidth;
+  const padding = Number(window.getComputedStyle(awardScroll).getPropertyValue('padding-left').match(regex));
+  awardScroll.scrollBy(width + padding, 0);
 })
