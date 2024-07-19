@@ -50,6 +50,24 @@ let videoScroll = document.querySelector("#video-scroller");
 // Regex to match one or more digits
 const regex = /\d+/g;
 
+window.addEventListener("resize", () => {
+  if (window.innerWidth <= 600) {
+    const coverWidth = document.querySelector('.cover').offsetWidth;
+    document.querySelectorAll(".media-container iframe").forEach(video => {
+      video.style.width = coverWidth + "px";
+      console.log(video.style.width);
+    });
+    document.querySelectorAll(".media-container .portrait").forEach(award => {
+      award.style.width = coverWidth + "px";
+      console.log(award.style.width);
+    });
+    document.querySelectorAll(".media-container .landscape").forEach(award => {
+      award.style.height = coverWidth + "px";
+      console.log(award.style.height);
+    });
+  }
+});
+
 leftScrollVideo.addEventListener("click", () => {
   const width = document.querySelector(".media-container iframe").offsetWidth;
   const padding = Number(window.getComputedStyle(videoScroll).getPropertyValue('padding-left').match(regex));
