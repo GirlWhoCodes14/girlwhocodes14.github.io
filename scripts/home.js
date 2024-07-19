@@ -50,6 +50,56 @@ let videoScroll = document.querySelector("#video-scroller");
 // Regex to match one or more digits
 const regex = /\d+/g;
 
+/*
+window.addEventListener("resize", () => {
+  if (window.innerWidth <= 600) {
+    const coverWidth = document.querySelector('.cover').offsetWidth;
+    document.querySelectorAll(".media-container iframe").forEach(video => {
+      video.style.width = coverWidth + "px";
+    });
+    document.querySelectorAll(".media-container .portrait").forEach(award => {
+      award.style.width = coverWidth + "px";
+    });
+    document.querySelectorAll(".media-container .landscape").forEach(award => {
+      award.style.height = coverWidth + "px";
+    });
+  }
+});
+*/
+
+const mediaQuery = window.matchMedia("(max-width: 550px)"); // Target screens wider than 700px
+
+function handleMediaChange(event) {
+  if (event.matches) {
+    const coverWidth = document.querySelector('.cover').offsetWidth;
+    document.querySelectorAll(".media-container iframe").forEach(video => {
+      video.style.width = coverWidth + "px";
+    });
+    document.querySelectorAll(".media-container .portrait").forEach(award => {
+      award.style.width = coverWidth + "px";
+    });
+    document.querySelectorAll(".media-container .landscape").forEach(award => {
+      award.style.width = coverWidth + "px";
+    });
+  } else {
+    // reset styles if screen size goes above 700px
+    document.querySelectorAll(".media-container iframe").forEach(video => {
+      video.style.width = ""; // Remove inline width style
+    });
+    document.querySelectorAll(".media-container .portrait").forEach(award => {
+      award.style.width = "";
+    });
+    document.querySelectorAll(".media-container .landscape").forEach(award => {
+      award.style.width = "";
+    });
+  }
+}
+
+mediaQuery.addEventListener("change", handleMediaChange);
+
+// Call the function initially to handle initial screen size
+handleMediaChange(mediaQuery);
+
 leftScrollVideo.addEventListener("click", () => {
   const width = document.querySelector(".media-container iframe").offsetWidth;
   const padding = Number(window.getComputedStyle(videoScroll).getPropertyValue('padding-left').match(regex));
