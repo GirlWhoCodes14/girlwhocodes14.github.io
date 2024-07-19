@@ -1,6 +1,6 @@
 const projects = [
   {
-    link: "/",
+    link: "../../",
     img: {
       src: "alexis-website-portfolio-home-page.png",
       alt: "Alexis Ayuso's Portfolio"
@@ -8,7 +8,6 @@ const projects = [
     name: 'Alexis Ayuso | Portfolio',
     type: 'Website'
   },
-
   {
     link: "crossight.html",
     img: {
@@ -18,7 +17,6 @@ const projects = [
     name: 'CrosSight',
     type: 'Android APP'
   },
-
   {
     link: "galexyhub.html",
     img: {
@@ -60,7 +58,6 @@ const projects = [
     name: 'Temperature Converter',
     type: 'Simple iOS APP'
   },
-
   {
     link: "sun-moon-lake.html",
     img: {
@@ -92,7 +89,6 @@ const projects = [
     name: 'Movie Night Invitation',
     type: 'Simple iOS APP'
   },
-
   {
     link: "supreme-court.html",
     img: {
@@ -102,7 +98,6 @@ const projects = [
     name: 'Supreme Court of Belize',
     type: 'SketchUp 3D Model'
   },
-
   {
     link: "report-card-generator.html",
     img: {
@@ -112,7 +107,6 @@ const projects = [
     name: 'Report Card Generator',
     type: 'C++ Program'
   }
-
 ];
 
 let projectsHTML = '';
