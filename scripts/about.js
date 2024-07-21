@@ -30,7 +30,6 @@ skillsList.forEach(skillSet => {
 document.querySelector('#skills-list').innerHTML = skillsListHTML;
 
 
-
 /* --------- generate education list --------- */
 let educationListHTML = '';
 
