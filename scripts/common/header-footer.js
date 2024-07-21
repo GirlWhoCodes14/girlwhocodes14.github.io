@@ -38,7 +38,7 @@ let headerHTML = `
 `
 document.querySelector('header').innerHTML = headerHTML
 
-// ------------- set active page in navbar -----------------------
+// ----------- set active page in navbar ----------------
 const navLinks = document.querySelectorAll('.nav-link');
 
 navLinks.forEach(function(link) {
@@ -47,7 +47,7 @@ navLinks.forEach(function(link) {
   }
 });
 
-// ------------- open/close dropdown navbar ----------------------
+// ---------- open/close dropdown navbar ----------------
 const menuToggle = document.querySelector('.menu-toggle')
 const menuToggleIcon = document.querySelector('.menu-toggle i')
 const dropdownMenu = document.querySelector('#dropdown-nav')
@@ -82,7 +82,7 @@ let footerHTML = `
 `
 document.querySelector('footer').innerHTML = footerHTML
 
-// ------------------- set active page in footer --------------------
+// --------------- set active page in footer ---------------
 const footerNav = document.querySelectorAll('.nav-link.footer-nav'); // footer.html
 
 footerNav.forEach(function(link) {
