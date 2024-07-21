@@ -85,7 +85,7 @@
 
 
 
-
+/* ------------------ responsiveness -------------------*/
 @media only screen and (max-width : 600px) {
     .demo-video iframe {
         width: 100%;

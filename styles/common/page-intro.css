@@ -58,15 +58,13 @@
     text-align: justify;
 }
 
-/* ---------------------- responsiveness ------------------- */
 
+
+/* ---------------------- responsiveness ------------------- */
 @media only screen and (max-width: 1034px) {
     .page-intro {
         padding: 4% 8%;
     }
-}
-
-@media only screen and (max-width: 875px) {
 }
 
 @media only screen and (max-width: 768px) {

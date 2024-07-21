@@ -90,7 +90,8 @@ form .form-error-text {
     color: var(--blue);
 }
 
-form input, form textarea {
+form input,
+form textarea {
     width: 100%;
     padding: 10px;
     font-size: 18px;
@@ -122,6 +123,9 @@ form input, form textarea {
     height: 25px;
 }
 
+
+
+/* ------------------ responsiveness -------------------*/
 @media only screen and (max-width: 975px) {
     .form-col-1, .form-col-2  {
         width: 100%;

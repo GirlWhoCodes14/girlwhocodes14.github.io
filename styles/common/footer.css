@@ -29,8 +29,10 @@ footer {
     font-weight: 500;
 }
 
-.nav-link.footer-nav.active, .nav-link.footer-nav:hover {
+.nav-link.footer-nav.active,
+.nav-link.footer-nav:hover {
     color: var(--blue);
+    font-size: 14px;
 }
 
 footer p {
@@ -39,6 +41,9 @@ footer p {
     color: var(--light-blue);
 }
 
+
+
+/* ------------------ responsiveness -------------------*/
 @media all and (max-width: 1024px) {
     footer {
         padding: 8px 8%;
