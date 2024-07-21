@@ -1,21 +1,4 @@
-const pages = [
-  {
-    link: '/',
-    name: 'Home'
-  },
-  {
-    link: 'about.html',
-    name: 'About'
-  },
-  {
-    link: 'portfolio.html',
-    name: 'Portfolio'
-  },
-  {
-    link: 'contact.html',
-    name: 'Contact'
-  }
-]
+import { pages } from "../../data/pages.js";
 
 // check if you need to exit current folder
 const currentPath = window.location.pathname;
