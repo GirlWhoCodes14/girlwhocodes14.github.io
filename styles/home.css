@@ -121,7 +121,9 @@ main img {
     -o-transition: ease-out;
 }
 
-/* responsiveness */
+
+
+/* ------------------ responsiveness -------------------*/
 @media only screen and (max-width: 850px) {
     .banner {
         padding: 0;

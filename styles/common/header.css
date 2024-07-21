@@ -19,7 +19,8 @@ header img {
     height: 50px;
 }
 
-header nav, footer nav {
+header nav,
+footer nav {
     float: right;
     display: block;
     position: static;
@@ -31,12 +32,14 @@ header nav, footer nav {
 }
 
 /* links (i.e., home, portfolio, services, etc.)*/
-header nav ul li, footer nav ul li {
+header nav ul li,
+footer nav ul li {
     display: inline-block;
     margin: 10px 20px;
 }
 
-header li, footer li {
+header li,
+footer li {
     list-style: none;
 }
 
@@ -50,7 +53,8 @@ header .nav-link {
     color: white;
 }
 
-.nav-link.active, .nav-link:hover {
+.nav-link.active,
+.nav-link:hover {
     transition: 0.3s ease-out;
     -webkit-transition: 0.3s ease-out;
     -moz-transition: 0.3s ease-out;
@@ -58,7 +62,8 @@ header .nav-link {
     -o-transition: 0.3s ease-out;
 }
 
-header .nav-link.active, header .nav-link:hover {
+header .nav-link.active,
+header .nav-link:hover {
     color: var(--lightest-blue2);
 }
 
@@ -128,6 +133,9 @@ hr {
     border: 1px solid --lightest-blue2;
 }
 
+
+
+/* ------------------ responsiveness -------------------*/
 @media all and (max-width: 1024px) {
     header {
         padding: 5px 8%;
@@ -154,7 +162,4 @@ hr {
     #dropdown-nav {
         display: block;
     }
-}
-
-@media only screen and (max-width: 425px) {
 }
