@@ -124,21 +124,21 @@ main img {
     cursor: pointer;
 }
 
-.media-container iframe {
+.video {
     aspect-ratio: 16/9;
 }
 
-.media-container .portrait {
+.portrait {
     aspect-ratio: 2/3;
 }
 
-.media-container .landscape {
+.landscape {
     aspect-ratio: 3/2;
 }
 
-.media-container iframe,
-.media-container .portrait,
-.media-container .landscape {
+.video,
+.portrait,
+.landscape {
     width: 390px;
     transition: ease-out;
     -webkit-transition: ease-out;
@@ -166,14 +166,6 @@ main img {
     .row.banner {
         padding: 0;
     }
-
-    /*
-    .media-container iframe,
-    .media-container .portrait,
-    .media-container .landscape {
-        width: 350px;
-    }
-    */
 }
 
 @media only screen and (max-width: 600px) {
@@ -210,9 +202,9 @@ main img {
         width: 100%;
     }
 
-    .media-container iframe,
-    .media-container .portrait,
-    .media-container .landscape {
+    .video,
+    .portrait,
+    .landscape {
         width: 22rem;
     }
 }
