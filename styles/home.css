@@ -32,6 +32,27 @@ main img {
     padding: 5% 5vw;
 }
 
+
+.header-with-lines {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+
+.header-with-lines .section-header {
+    display: flex;
+    width: auto;
+}
+
+.header-with-lines hr {
+    border: 1px solid #9AC8CD;
+    width: 60px;
+    height: 1px;
+    margin: auto 10px;
+}
+
 /* Video scroll bar */
 .main-scroll {
     width: 100%;
@@ -182,7 +203,6 @@ main img {
     .scroll-media {
         gap: 0;
         padding: 10px 0;
-        overflow: hidden;
     }
 
     .scroll-media,
