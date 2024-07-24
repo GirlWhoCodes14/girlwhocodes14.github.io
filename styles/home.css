@@ -32,6 +32,27 @@ main img {
     padding: 5% 5vw;
 }
 
+
+.header-with-lines {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+
+.header-with-lines .section-header {
+    display: flex;
+    width: auto;
+}
+
+.header-with-lines hr {
+    border: 1px solid #9AC8CD;
+    width: 60px;
+    height: 1px;
+    margin: auto 10px;
+}
+
 /* Video scroll bar */
 .main-scroll {
     width: 100%;
@@ -103,21 +124,21 @@ main img {
     cursor: pointer;
 }
 
-.media-container iframe {
+.video {
     aspect-ratio: 16/9;
 }
 
-.media-container .portrait {
+.portrait {
     aspect-ratio: 2/3;
 }
 
-.media-container .landscape {
+.landscape {
     aspect-ratio: 3/2;
 }
 
-.media-container iframe,
-.media-container .portrait,
-.media-container .landscape {
+.video,
+.portrait,
+.landscape {
     width: 390px;
     transition: ease-out;
     -webkit-transition: ease-out;
@@ -145,14 +166,6 @@ main img {
     .row.banner {
         padding: 0;
     }
-
-    /*
-    .media-container iframe,
-    .media-container .portrait,
-    .media-container .landscape {
-        width: 350px;
-    }
-    */
 }
 
 @media only screen and (max-width: 600px) {
@@ -182,7 +195,6 @@ main img {
     .scroll-media {
         gap: 0;
         padding: 10px 0;
-        overflow: hidden;
     }
 
     .scroll-media,
@@ -190,9 +202,9 @@ main img {
         width: 100%;
     }
 
-    .media-container iframe,
-    .media-container .portrait,
-    .media-container .landscape {
+    .video,
+    .portrait,
+    .landscape {
         width: 22rem;
     }
 }

@@ -1,13 +1,18 @@
 import { videos } from "../data/videos.js";
 import { awards } from "../data/awards.js";
+import { createSlider, scrollLeft, scrollRight, checkScreenWidth } from "../scripts/utils/sliders.js";
 
 /* ------------------ generate videos --------------------- */
+// create video slider section
+document.querySelector('#js-video-section').innerHTML = createSlider("Project Videos");
+
+// generate the videos for the projects video slider
 let videosHTML = '';
 
 videos.forEach(video => {
   videosHTML += `
   <div class="media-container">
-    <iframe width="auto" height="auto" src="${video.src}" title="${video.title}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe class="video" width="auto" height="auto" src="${video.src}" title="${video.title}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   </div>
   `;
 })
@@ -15,26 +20,7 @@ videos.forEach(video => {
 document.querySelector('#video-scroller').innerHTML = videosHTML;
 
 /* functions used to scroll through the sliders */
-// Regex to match one or more digits
-const regex = /\d+/g;
 
-let width;
-let padding;
-
-function getWidthAndPadding() {
-  width = document.querySelector(".media-container iframe").offsetWidth;
-  padding = Number(window.getComputedStyle(videoScroll).getPropertyValue('padding-left').match(regex));
-}
-
-function scrollLeft(slide) {
-  getWidthAndPadding();
-  slide.scrollBy((width + padding) * -1, 0);
-}
-
-function scrollRight(slide) {
-  getWidthAndPadding();
-  slide.scrollBy(width + padding, 0);
-}
 
 /* --------------- scroll through videos ----------------- */
 const leftScrollVideo = document.querySelector('.js-left-scroll-video')
@@ -47,8 +33,12 @@ rightScrollVideo.addEventListener("click", () => scrollRight(videoScroll))
 
 
 /* ------------------ generate accomplishments --------------------- */
+// create accomplishments slider section
+document.querySelector('#js-award-section').innerHTML = createSlider("My Accomplishments");
+
 let awardsHTML = '';
 
+// generate the awards for the accomplishments slider
 awards.forEach(award => {
   awardsHTML += `
   <div class="media-container">
@@ -57,14 +47,12 @@ awards.forEach(award => {
   `;
 })
 
-document.querySelector('#accomplishments-scroller').innerHTML = awardsHTML;
-
-
+document.querySelector('#award-scroller').innerHTML = awardsHTML;
 
 /* --------------- scroll through accomplishments ----------------- */
-const leftScrollAwards = document.querySelector('.js-left-scroll-awards')
-const rightScrollAwards = document.querySelector('.js-right-scroll-awards')
-let awardScroll = document.querySelector("#accomplishments-scroller");
+const leftScrollAwards = document.querySelector('.js-left-scroll-award')
+const rightScrollAwards = document.querySelector('.js-right-scroll-award')
+let awardScroll = document.querySelector("#award-scroller");
 
 leftScrollAwards.addEventListener("click", () => scrollLeft(awardScroll))
 rightScrollAwards.addEventListener("click", () => scrollRight(awardScroll))
@@ -73,41 +61,10 @@ rightScrollAwards.addEventListener("click", () => scrollRight(awardScroll))
 
 
 // ----------------- responsiveness -------------------
-function setWidthForSlides(width) {
-  document.querySelectorAll(".media-container iframe, .media-container .portrait, .media-container .landscape").forEach(video => {
-    video.style.width = width;
-  });
-}
-function checkScreenWidth() {
-  if (window.innerWidth <= 550) {
-    setWidthForSlides(document.querySelector('.cover').offsetWidth + "px");
-  } else {
-    setWidthForSlides("");
-  }
-}
+const sliderMediaClass = ".video, .portrait, .landscape";
 
 // check the screen width whenever the screen is resized
-window.addEventListener("resize", () => checkScreenWidth());
+window.addEventListener("resize", () => checkScreenWidth(sliderMediaClass));
 
-// Call the function to handle initial screen size
-checkScreenWidth();
-
-
-/*
-const mediaQuery = window.matchMedia("(max-width: 550px)"); // Target screens wider than 700px
-
-function handleMediaChange(event) {
-  if (event.matches) {
-    const coverWidth = document.querySelector('.cover').offsetWidth + "px";
-    setWidthForSlides(coverWidth);
-  }
-  else {
-    // reset styles if screen size goes above 700px
-    setWidthForSlides("");
-  }
-}
-mediaQuery.addEventListener("change", handleMediaChange);
-
-// Call the function initially to handle initial screen size
-handleMediaChange(mediaQuery);
-*/
+// call the function to handle initial screen size
+checkScreenWidth(sliderMediaClass);

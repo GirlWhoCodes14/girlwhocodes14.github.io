@@ -124,7 +124,7 @@ header .nav-link.active {
     padding: 10px;
 }
 
-hr {
+header hr {
     display: none;
 }
 
