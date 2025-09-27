@@ -18,6 +18,7 @@ document.querySelector('.js-social-icons').innerHTML = contactHTML;
 
 
 // show notification under form that the message is sending
+/*
 const form = document.forms['message-form']
 const msg = document.getElementById('js-confirm-msg')
 
@@ -33,6 +34,7 @@ form.addEventListener('submit', e => {
 
     form.reset()
 })
+    */
 
 // send email to Alexis Ayuso
 
