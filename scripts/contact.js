@@ -24,7 +24,7 @@ const msg = document.getElementById('js-confirm-msg')
 form.addEventListener('submit', e => {
     e.preventDefault()
 
-    sendEmail()
+    //sendEmail()
 
     msg.innerHTML = "Your message is sending. Wait a moment."
     setTimeout(function(){
@@ -35,6 +35,8 @@ form.addEventListener('submit', e => {
 })
 
 // send email to Alexis Ayuso
+
+/*
 function sendEmail() {
     Email.send({
         SecureToken : "03558de4-6837-4d64-b1a3-8bf078120917",
@@ -56,3 +58,4 @@ function sendEmail() {
         }
     );
 }
+*/
