@@ -1,7 +1,7 @@
 
 import { socials } from "../data/social-links.js";
 
-/* generate contacts HTML */
+/* --------------------- generate contacts HTML --------------------- */
 let contactHTML = '';
 
 socials.forEach(social => {
@@ -17,47 +17,44 @@ document.querySelector('.js-social-icons').innerHTML = contactHTML;
 
 
 
-// show notification under form that the message is sending
-/*
-const form = document.forms['message-form']
-const msg = document.getElementById('js-confirm-msg')
+/* -------------------- Popup for form submission ------------------- */
+const form = document.getElementById("contactForm");
+const popup = document.getElementById("popup");
+const popupTitle = document.getElementById("popupTitle");
+const popupMessage = document.getElementById("popupMessage");
 
-form.addEventListener('submit', e => {
-    e.preventDefault()
+// Helper function to show popup
+function showPopup(title, message, titleColor) {
+  popupTitle.textContent = title;
+  popupMessage.textContent = message;
+  popupTitle.style.color = titleColor;
+  popup.style.display = "block";
 
-    //sendEmail()
-
-    msg.innerHTML = "Your message is sending. Wait a moment."
-    setTimeout(function(){
-    msg.innerHTML = ""
-    }, 6000)
-
-    form.reset()
-})
-    */
-
-// send email to Alexis Ayuso
-
-/*
-function sendEmail() {
-    Email.send({
-        SecureToken : "03558de4-6837-4d64-b1a3-8bf078120917",
-        To : 'alexis.ayuso.bz@gmail.com',
-        From : "iamalexisayuso@gmail.com",
-        Subject : "Email from " + document.getElementById("name").value + " | Alexis' Website",
-        Body : "Name: " + document.getElementById("name").value
-            + "<br> Email: " + document.getElementById("email").value
-            + "<br><br> Message: <br>" + document.getElementById("message").value
-    }).then(
-        message => {
-            if (message = "OK") {
-                Swal.fire({
-                    title: "Success!",
-                    text: "Email sent successfully!",
-                    icon: "success"
-                });
-            }
-        }
-    );
+  setTimeout(() => {
+    popup.style.display = "none";
+  }, 6000);
 }
-*/
+
+form.addEventListener("submit", function(e) {
+  e.preventDefault(); // prevent page reload
+
+  const data = new FormData(form);
+
+  fetch("https://formspree.io/f/xjkagpbo", {
+    method: "POST",
+    body: data,
+    headers: { "Accept": "application/json" }
+  })
+  .then(response => response.json())
+  .then(data => {
+    if (data.ok || data.status === 200) {
+      showPopup("Success!", "Email sent successfully!", "#4CAF50"); // green title
+      form.reset();
+    } else {
+      showPopup("Error!", "Oops! Something went wrong.", "#f44336"); // red title
+    }
+  })
+  .catch(err => {
+    showPopup("Error!", "Oops! Something went wrong.", "#f44336"); // red title
+  });
+});

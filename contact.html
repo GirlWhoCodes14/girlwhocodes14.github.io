@@ -48,7 +48,7 @@
 			<div class="row second">
 				<h1 class="sub-title">Send me an email.</h1>
 				<div class="form-section">
-					<form name="message-form" action="https://formspree.io/f/xjkagpbo" method="POST">
+					<form id="contactForm" name="message-form">
 						<div class="form-col-1">
 							<div class="input-form">
 								<label for="name">Name</label>
@@ -71,6 +71,12 @@
 							<div class="btn-container"><button type="submit" id="submit" class="btn">Send Email</button></div>
 						</div>
 					</form>
+
+					<!-- Popup for Form Success or Error -->
+					<div id="popup">
+						<h1 id="popupTitle"></h1>
+						<p id="popupMessage"></p>
+					</div>
 				</div>
 			</div>
 		</main>
