@@ -163,6 +163,13 @@ export const skillsList = [
         src: "Microsoft_Clipchamp_logo.png",
         alt: "Microsoft Clipchamp logo"
       }
+    },
+    {
+      name: "Canva",
+      img: {
+        src: "Canva_logo.png",
+        alt: "Canva logo"
+      }
     }]
   }
 ]
