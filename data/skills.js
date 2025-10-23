@@ -155,7 +155,7 @@ export const skillsList = [
     }]
   },
   {
-    type: "Video Editing",
+    type: "Editing",
     skills: [
     {
       name: "Clipchamp",
