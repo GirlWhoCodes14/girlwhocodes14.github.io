@@ -17,7 +17,7 @@ pages.forEach(page => {
 
 let headerHTML = `
   <a class="my-logo" href="/"><img src="${pathBack}images/alexis_logo.png" alt="Alexis Ayuso's logo">.</a>
-  <nav>
+  <nav role="navigation" aria-label="Primary navigation">
     <!-- Navigation Bar-->
     <ul id="header-nav">
       ${pagesHTML}
@@ -31,7 +31,7 @@ let headerHTML = `
   </nav>
 
   <!-- Dropdown Navigation -->
-  <div id="dropdown-nav">
+  <div id="dropdown-nav" role="navigation" aria-hidden="true">
     <ul>
       ${pagesHTML}
     </ul>
@@ -63,18 +63,43 @@ const menuToggleIcon = document.querySelector('.menu-toggle i');
 const dropdownMenu = document.querySelector('#dropdown-nav');
 
 if (menuToggle && dropdownMenu && menuToggleIcon) {
+  const openMenu = () => {
+    dropdownMenu.classList.add('open');
+    menuToggle.setAttribute('aria-expanded', 'true');
+    dropdownMenu.setAttribute('aria-hidden', 'false');
+    menuToggleIcon.className = 'fa-solid fa-xmark';
+  };
+
+  const closeMenu = () => {
+    dropdownMenu.classList.remove('open');
+    menuToggle.setAttribute('aria-expanded', 'false');
+    dropdownMenu.setAttribute('aria-hidden', 'true');
+    menuToggleIcon.className = 'fa-solid fa-bars';
+  };
+
   menuToggle.addEventListener('click', () => {
-    const isOpen = dropdownMenu.classList.toggle('open');
-    menuToggle.setAttribute('aria-expanded', String(isOpen));
-    menuToggleIcon.className = isOpen ? 'fa-solid fa-xmark' : 'fa-solid fa-bars';
+    const isOpen = dropdownMenu.classList.contains('open');
+    if (isOpen) closeMenu(); else openMenu();
   });
 
   // Close dropdown on Escape key
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && dropdownMenu.classList.contains('open')) {
-      dropdownMenu.classList.remove('open');
-      menuToggle.setAttribute('aria-expanded', 'false');
-      menuToggleIcon.className = 'fa-solid fa-bars';
+      closeMenu();
+    }
+  });
+
+  // Close when clicking outside the menu
+  document.addEventListener('click', (e) => {
+    if (!dropdownMenu.contains(e.target) && !menuToggle.contains(e.target) && dropdownMenu.classList.contains('open')) {
+      closeMenu();
+    }
+  });
+
+  // Close when selecting a link inside the dropdown (useful on mobile)
+  dropdownMenu.addEventListener('click', (e) => {
+    if (e.target.closest('a')) {
+      closeMenu();
     }
   });
 }
