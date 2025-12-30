@@ -37,7 +37,7 @@ education.forEach(school => {
   educationListHTML += `
   <div class="school">
     <div class="school-logo">
-      <a href="${school.link}" target="_blank"><img src="images/education/${school.img.src}" alt="${school.img.alt}"></a>
+      <a href="${school.link}" target="_blank" rel="noopener noreferrer"><img src="images/education/${school.img.src}" alt="${school.img.alt}"></a>
     </div>
     <div class="school-details">
       <h4>${school.time}</h4>
