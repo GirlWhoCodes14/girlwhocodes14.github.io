@@ -76,6 +76,8 @@ header .nav-link.active {
     cursor: pointer;
     color: white;
     font-size: 25px;
+    border: none;
+    background: var(--header-bgColor);
 
     transition: color 0.5s scale 0.5s;
     -webkit-transition: color 0.5s scale 0.5s;

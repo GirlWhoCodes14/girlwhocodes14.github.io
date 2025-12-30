@@ -1,12 +1,10 @@
 import { pages } from "../../data/pages.js";
 
 // -------------- check if you need to exit current folder ---------------
+// determine if current page is inside /projects/ and set a relative path back
 const currentPath = window.location.pathname;
-let pathBack = '';
-
-if (currentPath.search("projects/")) {
-  pathBack = '../';
-}
+const isProjectPage = currentPath.includes('/projects/');
+const pathBack = isProjectPage ? '../' : '';
 
 /* -------------------------- generate header -------------------------- */
 let pagesHTML = '';
@@ -26,7 +24,10 @@ let headerHTML = `
     </ul>
 
     <!-- hamburger/exit icon -->
-    <div class="menu-toggle"><i class="fa-solid fa-bars"></i></div>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="dropdown-nav" aria-label="Toggle navigation">
+      <i class="fa-solid fa-bars" aria-hidden="true"></i>
+      <span class="sr-only">Toggle navigation</span>
+    </button>
   </nav>
 
   <!-- Dropdown Navigation -->
@@ -41,22 +42,42 @@ document.querySelector('header').innerHTML = headerHTML
 // ----------- set active page in navbar ----------------
 const navLinks = document.querySelectorAll('.nav-link');
 
+// normalize current path so '/' matches '/index.html'
+const normalizedCurrentPath = (currentPath === '/' ? '/index.html' : currentPath);
+
 navLinks.forEach(function(link) {
-  if (link.href.endsWith(currentPath)) {
-    link.classList.add('active');
+  try {
+    const linkPath = new URL(link.href).pathname;
+    const normalizedLinkPath = (linkPath === '/' ? '/index.html' : linkPath);
+    if (normalizedLinkPath === normalizedCurrentPath) {
+      link.classList.add('active');
+    }
+  } catch (e) {
+    // ignore non-HTTP links (mailto:, tel:, etc.)
   }
 });
 
 // ---------- open/close dropdown navbar ----------------
-const menuToggle = document.querySelector('.menu-toggle')
-const menuToggleIcon = document.querySelector('.menu-toggle i')
-const dropdownMenu = document.querySelector('#dropdown-nav')
+const menuToggle = document.querySelector('.menu-toggle');
+const menuToggleIcon = document.querySelector('.menu-toggle i');
+const dropdownMenu = document.querySelector('#dropdown-nav');
 
-menuToggle.addEventListener("click", () => {
-  dropdownMenu.classList.toggle('open')
-  const isOpen = dropdownMenu.classList.contains('open')
-  menuToggleIcon.classList = isOpen ? 'fa-solid fa-xmark' : 'fa-solid fa-bars'
-})
+if (menuToggle && dropdownMenu && menuToggleIcon) {
+  menuToggle.addEventListener('click', () => {
+    const isOpen = dropdownMenu.classList.toggle('open');
+    menuToggle.setAttribute('aria-expanded', String(isOpen));
+    menuToggleIcon.className = isOpen ? 'fa-solid fa-xmark' : 'fa-solid fa-bars';
+  });
+
+  // Close dropdown on Escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && dropdownMenu.classList.contains('open')) {
+      dropdownMenu.classList.remove('open');
+      menuToggle.setAttribute('aria-expanded', 'false');
+      menuToggleIcon.className = 'fa-solid fa-bars';
+    }
+  });
+}
 
 
 
@@ -71,8 +92,9 @@ pages.forEach(page => {
   `;
 })
 
+const currentYear = new Date().getFullYear();
 let footerHTML = `
-  <p>&copy; 2024 Alexis Ayuso</p>
+  <p>&copy; ${currentYear} Alexis Ayuso</p>
 
   <nav>
     <ul>
@@ -86,18 +108,13 @@ document.querySelector('footer').innerHTML = footerHTML
 const footerNav = document.querySelectorAll('.nav-link.footer-nav'); // footer.html
 
 footerNav.forEach(function(link) {
-  if (link.href.endsWith(currentPath)) {
-    link.classList.add('active');
-  }
-});
-
-
-
-
-/* ------------------------------ utility ------------------------------------------- */
-// ------- prevent viewers from right clicking and download images ------
-document.addEventListener('contextmenu', event => {
-  if (event.target.matches('img')) {
-    event.preventDefault();
+  try {
+    const linkPath = new URL(link.href).pathname;
+    const normalizedLinkPath = (linkPath === '/' ? '/index.html' : linkPath);
+    if (normalizedLinkPath === normalizedCurrentPath) {
+      link.classList.add('active');
+    }
+  } catch (e) {
+    // ignore
   }
 });
