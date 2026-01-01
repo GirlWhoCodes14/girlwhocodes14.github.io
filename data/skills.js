@@ -110,6 +110,18 @@ export const skillsList = [
       }
     }]
   },
+
+  {
+    type: "Cloud Computing",
+    skills: [
+    {
+      name: "Amazon Web Services",
+      img: {
+        src: "AWS_logo.png",
+        alt: "Amazon Web Services logo"
+      }
+    }]
+  },
   
   {
     type: "Microsoft Office",
@@ -133,24 +145,6 @@ export const skillsList = [
       img: {
         src: "Microsoft_Office_Excel_logo.png",
         alt: "Excel"
-      }
-    }]
-  },
-  {
-    type: "Familiarity with",
-    skills: [
-    {
-      name: "Java",
-      img: {
-        src: "Java_logo.png",
-        alt: "Java logo"
-      }
-    },
-    {
-      name: "Flutter",
-      img: {
-        src: "Flutter_logo.png",
-        alt: "Flutter logo"
       }
     }]
   },
