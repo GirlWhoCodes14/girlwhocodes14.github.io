@@ -55,20 +55,17 @@ header .nav-link {
 
 .nav-link.active,
 .nav-link:hover {
-    transition: 0.3s ease-out;
-    -webkit-transition: 0.3s ease-out;
-    -moz-transition: 0.3s ease-out;
-    -ms-transition: 0.3s ease-out;
-    -o-transition: 0.3s ease-out;
-}
-
-header .nav-link.active,
-header .nav-link:hover {
-    color: var(--lightest-blue2);
+  color: var(--lightest-blue2);
+  transition: 0.3s ease-out;
+  -webkit-transition: 0.3s ease-out;
+  -moz-transition: 0.3s ease-out;
+  -ms-transition: 0.3s ease-out;
+  -o-transition: 0.3s ease-out;
 }
 
 header .nav-link.active {
-    font-weight: 700;
+  font-size: 16px;
+  font-weight: 350;
 }
 
 .menu-toggle {
@@ -168,7 +165,7 @@ header.menu-open .nav-list li a {
 }
 
 /* focus styles for keyboard users */
-.nav-link:focus, .nav-link:focus-visible {
+ .nav-link:focus-visible {
   outline: 3px solid var(--lightest-blue2);
   outline-offset: 2px;
   border-radius: 4px;
