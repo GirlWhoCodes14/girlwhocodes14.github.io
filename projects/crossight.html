@@ -1,30 +1,14 @@
+---
+---
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    	<link rel="icon" type="url" href="../images/alexis_graduation_thumbnail.png"/>
-
 		<title>CrosSight | Alexis Ayuso and Zenroy Chance</title>
 		<meta name="description" content="Learn about CrosSight (Android APP) by Zenroy Chance and Alexis Ayuso">
+		
+		<link href="/styles/projects.css" rel="stylesheet" type="text/css" />
 
-		<link href="../styles/common/page-intro.css" rel="stylesheet" type="text/css" />
-		<link href="../styles/projects.css" rel="stylesheet" type="text/css" />
-
-		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Common Head ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-    <!-- CSS -->
-    <link href="../styles/common/header.css" rel="stylesheet" type="text/css" />
-    <link href="../styles/common/footer.css" rel="stylesheet" type="text/css" />
-    <link href="../styles/common/style.css" rel="stylesheet" type="text/css" />
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Quicksand:wght@300..700&family=Varela+Round&display=swap" rel="stylesheet">
-
-    <!-- Font Awesome: Icons -->
-    <script src="https://kit.fontawesome.com/5e4a65d337.js" crossorigin="anonymous"></script>
+		{% include head.html %}
 	</head>
 
 	<body>
@@ -40,14 +24,14 @@
 				<div class="repo-button"><a class="btn" href="https://github.com/GirlWhoCodes14/CrosSight-v1" target="_blank" rel="noopener noreferrer">Repository<i class="fa-brands fa-github"></i></a></div>
 				</div>
 				<div class="intro-img-col">
-					<img src="../images/projects/crossight/crossight_logo_cropped.jpg" alt="Application Logo">
+					<img src="/images/projects/crossight/crossight_logo_cropped.jpg" alt="Application Logo">
 				</div>
 			</div>
 
 			<div class="row second">
 				<div class="center">
 					<h1 class="section-header">Poster</h1>
-					<img class="full-img" src="../images/projects/crossight/CrosSight-poster.png" alt="CrosSight poster">
+					<img class="full-img" src="/images/projects/crossight/CrosSight-poster.png" alt="CrosSight poster">
 				</div>
 			</div>
 
@@ -87,8 +71,8 @@
 				</div>
 
 				<div class="img-compare">
-					<img src="../images/projects/crossight/CrosSight-en.jpg" alt="CrosSight (English version)">
-					<img src="../images/projects/crossight/CrosSight-zh.jpg" alt="CrosSight (Chinese version)">
+					<img src="/images/projects/crossight/CrosSight-en.jpg" alt="CrosSight (English version)">
+					<img src="/images/projects/crossight/CrosSight-zh.jpg" alt="CrosSight (Chinese version)">
 				</div>
 			</div>
 
@@ -97,8 +81,8 @@
 					<p>CrosSight leverages object detection with a MobileNetV2 architecture to identify pedestrian signals and crosswalks. The object detection model achieved a high Mean Average Precision (mAP) of 97.7%, indicating excellent accuracy in detecting pedestrian signals and crosswalks. Training results showed a decrease in box, class, and object loss, signifying effective model learning.</p>
 				</div>
 				<div class="img-compare">
-					<img src="../images/projects/crossight/CrosSight-green-light.jpg" alt="CrosSight at a Green Light">
-					<img src="../images/projects/crossight/CrosSight-red-light.jpg" alt="CrosSight at a Red Light">
+					<img src="/images/projects/crossight/CrosSight-green-light.jpg" alt="CrosSight at a Green Light">
+					<img src="/images/projects/crossight/CrosSight-red-light.jpg" alt="CrosSight at a Red Light">
 				</div>
 				<div class="paragraph">
 					<p>CrosSight complements traditional aids like white canes and guide dogs by providing real-time information and navigation assistance. This application has the potential to significantly improve the mobility and independence of visually impaired people.</p>
@@ -107,8 +91,5 @@
 		</main>
 
 		<footer></footer>
-
-		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~ Javascript ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-		<script type="module" src="../scripts/common/header-footer.js"></script>
 	</body>
 </html>

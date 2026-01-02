@@ -1,0 +1,38 @@
+###############################################
+# JEKYLL BUILD OUTPUT
+# GitHub Pages + local Jekyll generate the _site folder automatically. Never commit build output.
+_site/
+
+
+###############################################
+# LOCAL RUBY / BUNDLER ENVIRONMENT
+# These folders store dependencies installed on your machine. They should not be pushed
+# to GitHub because GitHub Pages installs its own environment.
+.bundle/
+vendor/
+
+
+###############################################
+# GEMFILE LOCKFILE
+# GitHub Pages ignores Gemfile.lock and uses its own locked version of the github-pages gem.
+# Ignoring this avoids Windows/Linux version conflicts.
+Gemfile.lock
+
+
+###############################################
+# VS CODE SETTINGS
+# Local editor preferences — not needed in repo.
+.vscode/
+
+
+###############################################
+# OS-GENERATED FILES
+# These appear automatically on Windows/macOS and should never be committed.
+.DS_Store
+Thumbs.db
+
+
+###############################################
+# NODE MODULES (FUTURE-PROOFING)
+# In case you add tooling later (e.g. Tailwind, Vite, ESLint), this prevents huge folders from being committed.
+node_modules/
