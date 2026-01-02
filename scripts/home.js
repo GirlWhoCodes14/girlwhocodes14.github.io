@@ -1,6 +1,29 @@
-import { videos } from "../data/videos.js";
-import { awards } from "../data/awards.js";
-import { createSlider, scrollLeft, scrollRight, checkScreenWidth } from "../scripts/utils/sliders.js";
+import { videos } from "/data/videos.js";
+import { awards } from "/data/awards.js";
+import { createSlider, scrollLeft, scrollRight, checkScreenWidth } from "/scripts/utils/sliders.js";
+
+/* ------------------ lite youtube embed --------------------- */
+class LiteYTEmbed extends HTMLElement {
+connectedCallback() {
+    this.videoId = this.getAttribute('videoid');
+    this.playBtn = this.querySelector('.lty-playbtn');
+    this.addEventListener('click', () => this.addIframe());
+}
+
+addIframe() {
+    if (this.classList.contains('lyt-activated')) return;
+    this.classList.add('lyt-activated');
+
+    const iframe = document.createElement('iframe');
+    iframe.setAttribute('allowfullscreen', '');
+    iframe.setAttribute('allow', 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture');
+    iframe.src = `https://www.youtube.com/embed/${this.videoId}?autoplay=1`;
+    this.appendChild(iframe);
+}
+}
+
+customElements.define('lite-youtube', LiteYTEmbed);
+
 
 /* ------------------ generate videos --------------------- */
 // create video slider section
@@ -12,7 +35,10 @@ let videosHTML = '';
 videos.forEach(video => {
   videosHTML += `
   <div class="media-container">
-    <iframe class="video" width="auto" height="auto" src="${video.src}" title="${video.title}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <lite-youtube class="video" videoid="${video.src}" aria-label="${video.title}" title="${video.title}"
+    style="background-image: url('https://i.ytimg.com/vi/${video.src}/hqdefault.jpg');">
+      <div class="lty-playbtn"></div>
+    </lite-youtube>
   </div>
   `;
 })
@@ -42,7 +68,7 @@ let awardsHTML = '';
 awards.forEach(award => {
   awardsHTML += `
   <div class="media-container">
-    <img class="${award.orientation}" src="images/accomplishments/${award.src}" alt="${award.alt}" loading="lazy">
+    <img class="${award.orientation}" src="/images/accomplishments/${award.src}" alt="${award.alt}" loading="lazy">
   </div>
   `;
 })

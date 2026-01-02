@@ -1,4 +1,4 @@
-import { pages } from "../../data/pages.js";
+import { pages } from "/data/pages.js";
 
 // -------------- check if you need to exit current folder ---------------
 // determine if current page is inside /projects/ and set a relative path back

@@ -1,30 +1,30 @@
 export const videos = [
   {
-    src: "https://www.youtube.com/embed/5VqnkXPP07s?si=JvpWNEQ7Gd0i3yRP&autoplay=1&mute=1",
+    src: "5VqnkXPP07s",
     title: "CrosSight Demo"
   },
   {
-    src: "https://www.youtube.com/embed/yBwE5zDrRcI?si=253tBxpeJWI4DYYA&autoplay=1&mute=1",
+    src: "yBwE5zDrRcI",
     title: "Report Card Generator"
   },
   {
-    src: "https://www.youtube.com/embed/YP1U27tXZxc?si=rDZhf3rEIbRYie8A&autoplay=1&mute=1",
+    src: "YP1U27tXZxc",
     title: "Supreme Court of Belize (3D Model)"
   },
   {
-    src: "https://www.youtube.com/embed/UdHUQAsHCoo?si=1AmJ4NqsTtL6DPrW",
+    src: "UdHUQAsHCoo",
     title: "Sun Moon Lake (3D Terrain)"
   },
   {
-    src: "https://www.youtube.com/embed/0CL94L1nRrI?si=7CGTDLuy_2Kb0m2m",
+    src: "0CL94L1nRrI",
     title: "Meet the Student at National Dong Hwa University | Study in Taiwan"
   },
   {
-    src: "https://www.youtube.com/embed/ygq8nLQYDfw?si=6H0C0BW-2MG9EoFm",
+    src: "ygq8nLQYDfw",
     title: "Introduction to Virtual Reality at NDHU"
   },
   {
-    src: "https://www.youtube.com/embed/d6YBFvjHhOU?si=65mp89c7QAjSsYSs",
+    src: "d6YBFvjHhOU",
     title: "(Terrain Scene) Sun Moon Lake"
   }
 ]

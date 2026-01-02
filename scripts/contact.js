@@ -1,5 +1,5 @@
 
-import { socials } from "../data/social-links.js";
+import { socials } from "/data/social-links.js";
 
 /* --------------------- generate contacts HTML --------------------- */
 let contactHTML = '';
