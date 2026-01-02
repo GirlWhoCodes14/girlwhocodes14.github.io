@@ -1,5 +1,5 @@
-import { skillsList } from "../data/skills.js";
-import { education } from "../data/education.js";
+import { skillsList } from "/data/skills.js";
+import { education } from "/data/education.js";
 
 
 /* --------- generate skills list --------- */
@@ -11,7 +11,7 @@ skillsList.forEach(skillSet => {
   skillSet.skills.forEach(skill => {
     skillsSetHTML += `
       <div class="skill">
-        <img src="images/skills/${skill.img.src}" alt="${skill.img.alt}">
+        <img src="/images/skills/${skill.img.src}" alt="${skill.img.alt}" loading="lazy">
         <p>${skill.name}</p>
       </div>
     `;
@@ -37,7 +37,9 @@ education.forEach(school => {
   educationListHTML += `
   <div class="school">
     <div class="school-logo">
-      <a href="${school.link}" target="_blank" rel="noopener noreferrer"><img src="images/education/${school.img.src}" alt="${school.img.alt}"></a>
+      <a href="${school.link}" target="_blank" rel="noopener noreferrer">
+      <img src="/images/education/${school.img.src}" alt="${school.img.alt}" loading="lazy">
+      </a>
     </div>
     <div class="school-details">
       <h4>${school.time}</h4>

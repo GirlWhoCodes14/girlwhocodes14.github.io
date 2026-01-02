@@ -1,4 +1,4 @@
-import { projects } from "../data/portfolio-list.js";
+import { projects } from "/data/portfolio-list.js";
 
 /* generate projects HTML */
 let projectsHTML = '';
@@ -6,8 +6,8 @@ let projectsHTML = '';
 projects.forEach(project => {
   projectsHTML += `
   <div class="project-preview">
-    <a href="projects/${project.link}">
-      <img src="images/projects/${project.img.src}" alt="${project.img.alt}">
+    <a href="/projects/${project.link}">
+      <img src="/images/projects/${project.img.src}" alt="${project.img.alt}" loading="lazy">
       <div class="preview-detail">
         <p>${project.name}</p>
         <p><span>${project.type}</span></p>

@@ -1,8 +1,8 @@
 export const projects = [
   {
-    link: "../../",
+    link: "/",
     img: {
-      src: "alexis-website-portfolio-home-page.png",
+      src: "website-portfolio-thumbnail.png",
       alt: "Alexis Ayuso's Portfolio"
     },
     name: 'Alexis Ayuso | Portfolio',
@@ -18,76 +18,13 @@ export const projects = [
     type: 'Android APP'
   },
   {
-    link: "galexyhub.html",
+    link: "report-card-generator.html",
     img: {
-      src: "galexy-hub/Shop.jpg",
-      alt: "GaLexy Hub"
+      src: "report_card_generator_final.png",
+      alt: "Report Card Generator"
     },
-    name: 'GaLexy Hub',
-    type: 'iOS APP'
-  },
-
-  /*
-  {
-    link: "restaurant-filter.html",
-    img: {
-      src: "restaurant_filter_crop.jpg",
-      alt: "Restaurant Filter"
-    },
-    name: 'Restaurant Filter',
-    type: 'Simple iOS APP'
-  },
-
-  {
-    link: "registration-form.html",
-    img: {
-      src: "registration_form.jpg",
-      alt: "Registration Form"
-    },
-    name: 'Registration Form',
-    type: 'Simple iOS APP'
-  },
-  */
-
-  {
-    link: "temperature-converter.html",
-    img: {
-      src: "temperature-converter/0C to 32F (crop).jpg",
-      alt: "Temperature Converter"
-    },
-    name: 'Temperature Converter',
-    type: 'Simple iOS APP'
-  },
-  {
-    link: "sun-moon-lake.html",
-    img: {
-      src: "sun-moon-lake/sun_moon_lake.png",
-      alt: "Sun Moon Lake (3D Terrain)"
-    },
-    name: 'Sun Moon Lake (3D Terrain)',
-    type: '3D Unity Terrain'
-  },
-
-  /*
-  {
-    link: "click-counter.html",
-    img: {
-      src: "click_counter.jpg",
-      alt: "Click Counter"
-    },
-    name: 'Click Counter',
-    type: 'Simple iOS APP'
-  },
-  */
-
-  {
-    link: "movie-invite.html",
-    img: {
-      src: "movie-invite/Invitation (default).jpg",
-      alt: "Movie Night Invitation"
-    },
-    name: 'Movie Night Invitation',
-    type: 'Simple iOS APP'
+    name: 'Report Card Generator',
+    type: 'C++ Program'
   },
   {
     link: "supreme-court.html",
@@ -99,12 +36,39 @@ export const projects = [
     type: 'SketchUp 3D Model'
   },
   {
-    link: "report-card-generator.html",
+    link: "galexyhub.html",
     img: {
-      src: "report_card_generator_final.png",
-      alt: "Report Card Generator"
+      src: "galexy-hub/Shop.jpg",
+      alt: "GaLexy Hub"
     },
-    name: 'Report Card Generator',
-    type: 'C++ Program'
+    name: 'GaLexy Hub',
+    type: 'iOS APP'
+  },
+  {
+    link: "temperature-converter.html",
+    img: {
+      src: "temperature-converter/0C to 32F (crop).jpg",
+      alt: "Temperature Converter"
+    },
+    name: 'Temperature Converter',
+    type: 'iOS APP'
+  },
+  {
+    link: "sun-moon-lake.html",
+    img: {
+      src: "sun-moon-lake/sun_moon_lake.png",
+      alt: "Sun Moon Lake (3D Terrain)"
+    },
+    name: 'Sun Moon Lake (3D Terrain)',
+    type: 'Unity 3D Terrain'
+  },
+  {
+    link: "movie-invite.html",
+    img: {
+      src: "movie-invite/Invitation (default).jpg",
+      alt: "Movie Night Invitation"
+    },
+    name: 'Movie Night Invitation',
+    type: 'iOS APP'
   }
 ];
