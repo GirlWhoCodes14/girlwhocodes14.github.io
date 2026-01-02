@@ -18,6 +18,24 @@ export const projects = [
     type: 'Android APP'
   },
   {
+    link: "report-card-generator.html",
+    img: {
+      src: "report_card_generator_final.png",
+      alt: "Report Card Generator"
+    },
+    name: 'Report Card Generator',
+    type: 'C++ Program'
+  },
+  {
+    link: "supreme-court.html",
+    img: {
+      src: "scb/front-left-model.png",
+      alt: "Supreme Court of Belize (3D Model)"
+    },
+    name: 'Supreme Court of Belize',
+    type: 'SketchUp 3D Model'
+  },
+  {
     link: "galexyhub.html",
     img: {
       src: "galexy-hub/Shop.jpg",
@@ -33,7 +51,7 @@ export const projects = [
       alt: "Temperature Converter"
     },
     name: 'Temperature Converter',
-    type: 'Simple iOS APP'
+    type: 'iOS APP'
   },
   {
     link: "sun-moon-lake.html",
@@ -42,7 +60,7 @@ export const projects = [
       alt: "Sun Moon Lake (3D Terrain)"
     },
     name: 'Sun Moon Lake (3D Terrain)',
-    type: '3D Unity Terrain'
+    type: 'Unity 3D Terrain'
   },
   {
     link: "movie-invite.html",
@@ -51,24 +69,6 @@ export const projects = [
       alt: "Movie Night Invitation"
     },
     name: 'Movie Night Invitation',
-    type: 'Simple iOS APP'
-  },
-  {
-    link: "supreme-court.html",
-    img: {
-      src: "scb/front-left-model.png",
-      alt: "Supreme Court of Belize (3D Model)"
-    },
-    name: 'Supreme Court of Belize',
-    type: 'SketchUp 3D Model'
-  },
-  {
-    link: "report-card-generator.html",
-    img: {
-      src: "report_card_generator_final.png",
-      alt: "Report Card Generator"
-    },
-    name: 'Report Card Generator',
-    type: 'C++ Program'
+    type: 'iOS APP'
   }
 ];
