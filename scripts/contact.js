@@ -6,7 +6,7 @@ let contactHTML = '';
 
 socials.forEach(social => {
   contactHTML += `
-  <a href="${social.href}" target="_blank">
+  <a href="${social.href}" target="_blank" rel="noopener noreferrer">
         <div class="contact-icon"><i class="${social.icon}"></i></div>
         <p>${social.name}</p>
     </a>

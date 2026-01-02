@@ -161,7 +161,7 @@ p {
 /* ----------------------- Transition between Pages --------------------------------- */
 @keyframes transitionIn {
   from {
-    opacity: 0.5;
+    opacity: 0;
     transform: rotateX(-15deg);
     -webkit-transform: rotateX(-15deg);
     -moz-transform: rotateX(-15deg);
@@ -180,8 +180,8 @@ p {
 }
 
 main {
-  animation: transitionIn 3.5s;
-  -webkit-animation: transitionIn 3.5s;
+  animation: transitionIn 3s;
+  -webkit-animation: transitionIn 3s;
 }
 
 

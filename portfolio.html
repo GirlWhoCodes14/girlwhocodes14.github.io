@@ -1,30 +1,15 @@
+---
+---
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="url" href="images/alexis_graduation_thumbnail.png"/>
-
     <title>Portfolio | Alexis Ayuso</title>
     <meta name="description" content="Explore the creations of Alexis Ayuso">
-    <meta name="author" content="Alexis Ayuso">
 
-    <link href="styles/portfolio.css" rel="stylesheet" type="text/css" />
+    <link href="/styles/portfolio.css" rel="stylesheet" type="text/css" />
+    <script type="module" src="/scripts/portfolio.js"></script>
 
-    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Common Head ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-    <!-- CSS -->
-    <link href="styles/common/header.css" rel="stylesheet" type="text/css" />
-    <link href="styles/common/footer.css" rel="stylesheet" type="text/css" />
-    <link href="styles/common/style.css" rel="stylesheet" type="text/css" />
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Quicksand:wght@300..700&family=Varela+Round&display=swap" rel="stylesheet">
-
-    <!-- Font Awesome: Icons -->
-    <script src="https://kit.fontawesome.com/5e4a65d337.js" crossorigin="anonymous"></script>
+    {% include head.html %}
   </head>
 
   <body>
@@ -47,9 +32,5 @@
     </main>
 
     <footer></footer>
-
-    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~ Javascript ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-    <script type="module" src="scripts/common/header-footer.js"></script>
-    <script type="module" src="scripts/portfolio.js"></script>
   </body>
 </html>
