@@ -42,7 +42,7 @@ let awardsHTML = '';
 awards.forEach(award => {
   awardsHTML += `
   <div class="media-container">
-    <img class="${award.orientation}" src="images/accomplishments/${award.src}" alt="${award.alt}">
+    <img class="${award.orientation}" src="images/accomplishments/${award.src}" alt="${award.alt}" loading="lazy">
   </div>
   `;
 })

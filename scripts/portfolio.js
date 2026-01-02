@@ -7,7 +7,7 @@ projects.forEach(project => {
   projectsHTML += `
   <div class="project-preview">
     <a href="projects/${project.link}">
-      <img src="images/projects/${project.img.src}" alt="${project.img.alt}">
+      <img src="images/projects/${project.img.src}" alt="${project.img.alt}" loading="lazy">
       <div class="preview-detail">
         <p>${project.name}</p>
         <p><span>${project.type}</span></p>
