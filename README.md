@@ -1,66 +1,42 @@
-# 🌐 Alexis’ Portfolio — girlwhocodes14.github.io
+# 🌐 Alexis Ayuso — Portfolio Website
 
 Welcome to my personal portfolio. This site showcases my journey as a software engineer, my technical projects, and the creative work I’ve built across web development, mobile development, and accessibility‑focused design. Coming Soon: Cloud engineering projects.
 
-You can explore the live site here:  
-**https://girlwhocodes14.github.io/**
+🔗 **Live Site:** https://girlwhocodes14.github.io
+
+> **Note:** This is my personal portfolio.  
+> Please **do not clone, fork, or reuse this repository** as a template.  
+> You’re welcome to explore the code for learning purposes, but the content and structure are part of my personal brand.
 
 ---
 
-## ✨ About This Portfolio
+## ✨ Features
 
 This portfolio is designed to be:
 
 - **Fast** — built with clean HTML, CSS, and JavaScript  
 - **Accessible** — thoughtful UI, readable typography, and responsive layouts  
 - **Maintainable** — uses Jekyll includes for shared components  
-- **Future‑proof** — no heavy frameworks, minimal dependencies, and simple structure  
-
----
-
-## 🎯 Purpose
-
-This portfolio serves as:
-
-- A showcase of my technical abilities  
-- A place to document my growth as a developer  
-- A hub for future employers, collaborators, and mentors  
-- A personal creative space where I experiment with design and code  
-
----
-
-## 🧩 Featured Projects
-
-A few of the projects showcased on the site include:
-
-- **CrosSight** — an accessibility‑focused tool designed to improve real-world navigation (i.e., crossing the street)  
-- **GalaxyHub** — a front-end only demo of an e-commerence iOS application  
-- **Movie Invite Generator** — a dynamic movie selector tool for a movie invitation  
-- **Report Card Generator** — a functional program with clean UI for generating student report cards 
-- **Temperature Converter** — a simple but polished temperature converstion iOS application  
-- **Sun Moon Lake** — a creative 3D visualization and character explorer inspired by a real lake in Taiwan  
-- **Supreme Court** — a 3D rendering of a real building in Belize  
-
-Each project demonstrates different aspects of my skill set, from UI design to JavaScript logic to responsive layout techniques.
+- **Future‑proof** — no heavy frameworks, minimal dependencies, and simple structure
 
 ---
 
 ## 🛠️ Tech Stack
 
-This portfolio is built using:
-
-- **HTML5**  
-- **CSS3** (with modular, reusable components)  
-- **JavaScript**  
-- **Jekyll** (for includes and GitHub Pages compatibility)  
-- **GitHub Pages** (hosting)  
+| Category | Technologies |
+|---------|--------------|
+| **Static Site Generator** | Jekyll |
+| **Frontend** | HTML5, CSS3, JavaScript |
+| **Styling** | Custom CSS, responsive design |
+| **Deployment** | GitHub Pages |
+| **Version Control** | Git & GitHub |
 
 Additional tools:
 
 - **Google Fonts**  
 - **Font Awesome**  
 - **VS Code**  
-- **Git**  
+- **Git** 
 
 ---
 
@@ -68,40 +44,85 @@ Additional tools:
 
 ```
 .
-├── _includes/        # Shared components (e.g., head.html)
-├── projects/         # Individual project pages
-├── styles/           # Global and component-level CSS
-├── scripts/          # JavaScript files
-├── images/           # Assets and media
-├── index.html        # Homepage
-├── _config.yml       # Jekyll configuration
-└── README.md         # This file
+├── _includes/          # Shared components (e.g., head.html)
+├── data/               # JSON or structured data
+├── styles/             # Global and component-level CSS
+├── scripts/            # JavaScript files
+├── images/             # Images and assets
+├── projects/           # Individual project pages
+├── index.html          # Homepage
+├── about.html          # About me 
+├── portfolio.html      # Projects showcase
+├── contact.html        # Contact form & info
+├── _config.yml         # Jekyll configuration
+└── README.md           # This file
 ```
 
 ---
 
-## 🚀 Running Locally
+## 🚀 Running the Site Locally
 
-To run the site locally with Jekyll:
+Whether you're brand new to Jekyll or already comfortable with it, here’s how to run this project locally.
+
+### 🟦 For Beginners (Step‑by‑Step)
+
+1. **Install Ruby**  
+   Jekyll runs on Ruby.  
+   - macOS: Ruby is preinstalled  
+   - Windows: Install via RubyInstaller  
+   - Linux: Use your package manager
+
+2. **Install Jekyll and Bundler**
+   ```bash
+   gem install jekyll bundler
+   ```
+
+3. **Clone your own repo**  
+   Since this is a personal portfolio, please don’t clone mine.  
+   But if you’re working on your own Jekyll site:
+   ```bash
+   git clone <your-repo-url>
+   cd <your-repo>
+   ```
+
+4. **Install dependencies**
+   ```bash
+   bundle install
+   ```
+
+5. **Run the development server**
+   ```bash
+   bundle exec jekyll serve
+   ```
+
+6. Open your browser and visit:
+   ```
+   http://localhost:4000
+   ```
+
+---
+
+### 🟩 For Experienced Jekyll Users (Quick Start)
 
 ```bash
+bundle install
 bundle exec jekyll serve
 ```
 
-Then open:
+That’s it — Jekyll will build the site and serve it locally at `localhost:4000`.
 
-```
-http://localhost:4000
-```
+---
 
-This ensures includes and Liquid tags render correctly.
+## 🤝 Contributing
+
+This is a personal project and not open for contributions.  
+However, if you have suggestions or spot an issue, feel free to open a discussion.
 
 ---
 
 ## 📬 Contact
 
-If you’d like to connect, collaborate, or learn more about my work:
+If you'd like to connect or collaborate:
 
-- **GitHub:** https://github.com/girlwhocodes14  
-- **Portfolio:** https://girlwhocodes14.github.io/  
-
+- **GitHub:** https://github.com/GirlWhoCodes14  
+- **Portfolio:** https://girlwhocodes14.github.io/
